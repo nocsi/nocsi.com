@@ -1,8 +1,8 @@
 [
   {
-    "title": "About",
+    "title": "NOCSI Blog",
     "links": [
-      { "name": "How to use external resources?", "to": "" }
+      { "name": "Index", "to": "" }
     ]
   },
   {
