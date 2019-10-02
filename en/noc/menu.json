@@ -28,7 +28,7 @@
   {
     "title": "Privacy Policy",
     "links": [
-      { "name": "", "to": "/privacy-policy" }
+      { "name": "iOS/iPadOS", "to": "/privacy-policy" }
     ]
   },
   {
