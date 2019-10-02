@@ -1,0 +1,30 @@
+{
+  "iso": "en",
+  "docVersion": "1.0.X",
+  "links": {
+    "blog": "Blog",
+    "noc": "Noc",
+    "homepage": "Home page",
+    "loc": "Loc"
+  },
+  "text": {
+    "an_error_occurred": "An error occurred",
+    "api_page_not_found": "API page not found",
+    "example_file": "Example Files",
+    "please_wait": "Please wait...",
+    "please_define_title": "Please define a title in the front matter",
+    "please_define_description": "Please define a description in the front matter",
+    "search": "Search (\"/\" to focus)",
+    "version": "Version"
+  },
+  "homepage": {
+    "title": "NOCSI",
+    "meta": {
+      "title": "NOCSI - ",
+      "description": ""
+   }
+  },
+  "footer": {
+    "authors": ""
+  }
+}
