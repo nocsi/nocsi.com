@@ -1,8 +1,13 @@
 [
   {
-    "title": "About",
+    "title": "About Noc",
     "links": [
-      { "name": "How to use external resources?", "to": "" }
+      {
+        "name": "About",
+        "to": "",
+        "contents": [
+          { "name": "Networking", "to": "#networking" }
+        ]
     ]
   },
   {
