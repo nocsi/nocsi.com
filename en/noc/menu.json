@@ -14,12 +14,14 @@
   {
     "title": "Getting Started",
     "links": [
+      {
         "to": "", "name": "Available Platforms",
         "contents": [
           { "to": "/ios", "name": "iOS/iPadOS" },
           { "to": "#macos", "name": "macOS" },
           { "to": "#webapp", "name": "webapp" }
         ]
+      },
       { "to": "/getting-started", "Getting started" }
     ]
   },
