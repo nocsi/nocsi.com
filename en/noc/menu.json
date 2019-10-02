@@ -10,9 +10,7 @@
           { "to": "#webapp", "name": "webapp" }
         ]
       },
-      { "to": "/getting-started", "Getting started" },
-      { "to": "/privacy-policy", "Privacy Policy" },
-      { "to": "/terms-of-service", "Terms of Service" }
+      { "to": "/getting-started", "name": "Getting started" }
     ]
   },
   {
@@ -25,6 +23,18 @@
     "title": "Noclet",
     "links": [
       { "name": "How to use Noclets", "to": "/noclets" }
+    ]
+  },
+  {
+    "title": "Privacy Policy",
+    "links": [
+      { "name": "", "to": "/privacy-policy" }
+    ]
+  },
+  {
+    "title": "Terms of Service",
+    "links": [
+      { "name": "", "to": "/terms-of-service" }
     ]
   }
 ]
