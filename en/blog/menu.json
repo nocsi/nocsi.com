@@ -1,0 +1,26 @@
+[
+  {
+    "title": "About",
+    "links": [
+      { "name": "How to use external resources?", "to": "" }
+    ]
+  },
+  {
+    "title": "Getting Started",
+    "links": [
+      { "name": "Getting started", "to": "" }
+    ]
+  },
+  {
+    "title": "Blueprints",
+    "links": [
+      { "name": "", "to": "/blueprints" }
+    ]
+  },
+  {
+    "title": "Noclet",
+    "links": [
+      { "name": "How to use Noclets", "to": "/noclets" }
+    ]
+  }
+]
