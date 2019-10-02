@@ -1,0 +1,30 @@
+[
+  {
+    "title": "NOCSI | Library",
+    "links": [
+      {
+        "to": "", "name": "Introduction",
+        "contents": [
+          { "to": "#about-privacy", "name": "About Privacy" },
+          { "to": "#privacy-problems", "name": "Privacy Issues" },
+          { "to": "#privacy-model", "name": "A New Privacy Model" }
+        ]
+      },
+      {
+        "to": "/privacy-framework", "name": "Privacy Framework" }
+      }
+    ]
+  },
+  {
+    "title": "Recipes",
+    "links": [
+      { "name": "", "to": "/blueprints" }
+    ]
+  },
+  {
+    "title": "Advanced",
+    "links": [
+      { "name": "Advanced", "to": "/advanced" }
+    ]
+  }
+]

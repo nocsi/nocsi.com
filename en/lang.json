@@ -2,9 +2,9 @@
   "iso": "en",
   "docVersion": "1.0.X",
   "links": {
-    "blog": "Blog",
-    "noc": "Noc",
     "homepage": "Home page",
+    "library": "Library",
+    "noc": "Noc",
     "loc": "Loc"
   },
   "text": {
