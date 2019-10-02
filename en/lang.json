@@ -22,7 +22,12 @@
     "meta": {
       "title": "NOCSI - ",
       "description": ""
-   }
+    },
+    "welcome": {
+      "app_types_prefix": "For ",
+      "app_types": ["noc", "loc"],
+      "app_types_suffix": "."
+    }
   },
   "footer": {
     "authors": ""
