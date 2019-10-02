@@ -10,9 +10,7 @@
           { "to": "#privacy-model", "name": "A New Privacy Model" }
         ]
       },
-      {
-        "to": "/privacy-framework", "name": "Privacy Framework" }
-      }
+      { "to": "/privacy-framework", "name": "Privacy Framework" }
     ]
   },
   {
