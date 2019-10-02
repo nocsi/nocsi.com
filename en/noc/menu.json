@@ -1,35 +1,18 @@
 [
   {
-    "title": "About Noc",
-    "links": [
-      {
-        "name": "About",
-        "to": "",
-        "contents": [
-          { "name": "Networking", "to": "#networking" }
-        ]
-      }
-    ]
-  },
-  {
     "title": "Getting Started",
     "links": [
       {
         "to": "", "name": "Available Platforms",
         "contents": [
-          { "to": "/ios", "name": "iOS/iPadOS" },
+          { "to": "#ios", "name": "iOS/iPadOS" },
           { "to": "#macos", "name": "macOS" },
           { "to": "#webapp", "name": "webapp" }
         ]
       },
-      { "to": "/getting-started", "Getting started" }
-    ]
-  },
-  {
-    "to": "/ios", "name": "iOS/iPadOS",
-    "contents": [
-      { "to": "#privacy-policy", "name": "Privacy Policy" },
-      { "to": "#terms-of-service", "name": "Terms of Service" }
+      { "to": "/getting-started", "Getting started" },
+      { "to": "/privacy-policy", "Privacy Policy" },
+      { "to": "/terms-of-service", "Terms of Service" }
     ]
   },
   {
