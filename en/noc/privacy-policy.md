@@ -3,13 +3,13 @@ title: Privacy Policy
 description: Privacy Policy for Noc
 ---
 
-# Privacy Policy: Noc
+## Privacy Policy: Noc
 
 Effective Date: September 11, 2019
 
 In the following policy(hereinafter - the "Privacy Policy"), Noc refers to the service offered by NOCSI, Ltd. Liability Co. (the "Company" or "We") through the [nocsi.com/noc](http://nocsi.com/noc) website and the software provided through it (the "Service"). This Privacy Policy explains (i) what information we collect through your access and use of our Service, (ii) the use we make of such information, and (iii) the security level we provide for protecting such information. By visiting [nocsi.com/noc](http://nocsi.com/noc), installing and/or using the Noc application, mobile applications, and its Services, you consent to the terms outlined in this Privacy Policy.
 
-# Philosophy
+## Philosophy
 
 Our Company is committed to empower users to be more secure, maintain privacy and subsequently achieve digital sovereignty for themselves. The design philosophy & principles, that we employ for Noc, greatly restricts our ability to collect information on users. In areas of privilege wherein we could collect user data, we minimize the level and period of access. Data that is collected is by-design to only be what is necessary to operate the aforementioned services. Ultimately, it is our ideal that the information we can collect on you can likewise be collected by an adversary.
 
@@ -23,7 +23,7 @@ The mandates are as follows:
 - The Mandate of Provability
 - The Mandate of Sovereignty
 
-# Can Not, not Do Not
+## Can Not, not Do Not
 
 As a user of Noc, NOCSI can NOT do any of the following:
 
@@ -35,17 +35,17 @@ As a user of Noc, NOCSI can NOT do any of the following:
 
 NOCSI has no interest in owning, touching, or looking at any of your data and will only seek data that is necessary for operations of the service.
 
-# "Trust, but Verify" to Zero Trust
+## "Trust, but Verify" to Zero Trust
 
 Users in the Noc ecosystem are expected to ultimately be responsible for their own cyber security infrastructure. Although we will employ a best-effort to go beyond our realm of control to assist users, it is ultimately the user's responsibility. NOCSI is building a suite of tools and services to better enable end users to have full authority and autonomy of their own cyber security infrastructure, with limited to no dependence on third party services that store and own their data. 
 
 NOCSI seeks to adhere to a collection practice bounded by a 'need-to-know' policy. If a user's data is not a functional requirement for operations, then we do not want it. Through our policy framework, we hope to instill in users a greater distrust of any third-party entity, ourselves included. As a whole, we believe most service providers can and should operate with a fraction of user data they do now.
 
-# Collection and Use of Personal Information (If any)
+## Collection and Use of Personal Information (If any)
 
 ## Mandate of Minimalism
 
-## In relation to Signup, User Authentication & Authorization:
+### In relation to Signup, User Authentication & Authorization:
 
 We leverage the identifier granted from Sign in with Apple as the sole data unit to reference you.
 
@@ -63,7 +63,7 @@ Information we request in the scope
 
 From a trust perspective, we are relying upon Apple to both authenticate and verify access to the Noc application and its services. Additionally, we depend on Apple to subsequently authorize access to Noc services. The Apple provided UID is married with Apple's subscription licensing and taken together is used to validate service access on our service gateway. This transaction is contained behind single-purpose service nodes and its communications are encrypted via Secure Socket Layer (SSL)
 
-## In relation to Authenticating Against Service Providers
+### In relation to Authenticating Against Service Providers
 
 The Noc applications are restricted to authenticating to your Cloud Providers strictly through their respective OAuth Identity Services. For each Cloud Provider, we store an associated access & refresh token. These tokens are maintained within each device's (if available) secure enclave and otherwise only exist outside their secure storage during active use. 
 
@@ -71,22 +71,22 @@ Noc clients will only operate with the most minimum of privileges given the cont
 
 Should users opt-in, Noc does employ a best-effort in preemptive collection of stale or otherwise dangling credentials that are not in-use/not-needed. NOCSI, does not take responsibility for this effort however. Collection and proper disposal of credentials ultimately falls under the domain of the user.
 
-## In relation to Third-Party Libraries & Services
+### In relation to Third-Party Libraries & Services
 
 The Noc service and its associated applications adhere to a general policy of minimizing use and reliance on Third-Party Libraries & Services. Primarily, the Noc clients utilize native iOS/macOS APIs and iCloud services.
 
 The Noc mobile client uses and declares the following capabilities/entitlements:
 
-- App Groups
-- Background Services
-    - Remote Notifications (CloudKit Core Data Sync)
-- iCloud
-    - iCloud Services
-- Keychain Sharing
-- Network Extensions
-- Push Notifications
-    - APS Environment (CloudKit Core Data Sync)
-- Sign In with Apple
+* App Groups
+* Background Services
+	* Remote Notifications (CloudKit Core Data Sync)
+* iCloud
+	* iCloud Services
+* Keychain Sharing
+* Network Extensions
+* Push Notifications
+	* APS Environment (CloudKit Core Data Sync)
+* Sign In with Apple
 
 ### In relation to Payment Processing
 
@@ -111,13 +111,13 @@ Details on Apple's Privacy Policy pertaining to iCloud can be found at:
 
 [https://www.apple.com/privacy/](https://www.apple.com/privacy/approach-to-privacy/)
 
-## Mandate of Indirection
+### Mandate of Indirection
 
 The Mandate of Indirection aims to minimize identifiable user patterns and add the necessary degrees of dissociation. Indirection, can be simple actions like requests via a proxy. Conversely, Indirection can be more elaborate - having your friend print out a webpage, another friend scans it and finally you viewing the webpage as a PDF.
 
 If optioned, Noc Users will be able to employ Indirection techniques designed to diffuse predictability and preserve User Privacy.
 
-## In relation to Metadata Emission
+### In relation to Metadata Emission
 
 Mobile applications produce a lot of *chatter,* and as a result, attackers can exploit this to fingerprint and identify you. Noc users can opt-in to a reduced-emissions mode wherein we attempt a best-effort reduction:
 
@@ -127,7 +127,7 @@ Mobile applications produce a lot of *chatter,* and as a result, attackers can e
 
 All other executions within the Noc application are thusly to occur with user-presence. 
 
-## In relation to Noc TestFlight & Apple StoreKit
+### In relation to Noc TestFlight & Apple StoreKit
 
 Users enrolled in the Noc TestFlight Beta test program are subject to greater than normal levels of information collection. Users submitting crash dump & other debugging information to us acknowledge the potential for PII and other sensitive information to exist in the transmission.
 
@@ -135,9 +135,9 @@ Details on Apple's Privacy Policy pertaining to TestFlight can be found at:
 
 [https://testflight.apple.com/#privacy-data](https://testflight.apple.com/#privacy-data)
 
-# Data Handling
+### Data Handling
 
-## Mandate of Ephemeralism
+### Mandate of Ephemeralism
 
 Like  with all things in life, things die. Noc Users acknowledge that any mode of operation, Noc Nodes (participating server instances) are coded to self-terminate. The operation will perform a best-effort to render both storage and network inert. Users acknowledge it the responsibility of an authorized Noc client, and by extension, the User itself, to subsequently remove any dangling Nodes.
 
@@ -147,7 +147,7 @@ Noclets is a term used to categorize and define add-ons/functionality that can i
 
 However, in the case that a User opts to enable a data-persistent Noclet, the user acknowledges and accepts the added uncertainty. Moving Data is a difficult problem - moving Data in a zero-trust environment with a mandate of privacy and security is more-so. Noc Users acknowledge that the Noc applications are acting in a best-effort to insert, hydrate and on-disposal - extract your data.
 
-## In relation to Third-party disclosure
+### In relation to Third-party disclosure
 
 We do not sell, trade, or other to outside parties any of your data or Personally Identifiable Information. Frankly, storing your data is a waste of space.
 
@@ -155,11 +155,11 @@ We do not sell, trade, or other to outside parties any of your data or Personall
 
 NOCSI will retain your Apple-provided identifiers and relevant subscription information for as long as allowed by the service provider (Apple). These are necessary components in facilitating the services to users. When opportune to, NOCSI will roll the relevant materials, and perform such actions in a best-effort manner. 
 
-## Tracking/Cookies and Other Technologies
+### Tracking/Cookies and Other Technologies
 
 NOCSI does not currently employ cookies nor tracking technologies. Cookies encountered through the use Noc and its services are not endorsed nor acknowledged by NOCSI as being associated with us. 
 
-## Disclosure of Data
+### Disclosure of Data
 
 ### Business Transaction
 
@@ -175,7 +175,7 @@ NOCSI is not responsible for data that service providers may disclose about you,
 
 Our Service does not acknowledge anyone under the age of 18 ("Children"). Although Noc and its associated applications are rated for all-ages, we do not want any data whatsoever pertaining to those under the age of 18. If you are a parent or guardian, and you are aware that your Child has somehow provided us with Personal Data, we ask that you contact us to remediate it.
 
-## Fair Information Practices
+### Fair Information Practices
 
 The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.
 
@@ -183,7 +183,7 @@ In order to be in line with Fair Information Practices we will take the followin
 
 - We will attempt to notify you via email within 72 hours - if there is an associable email address registered to your account identity
 
-## Mandate of Sovereignty
+### Mandate of Sovereignty
 
 The Mandate of Sovereignty is the collective of the other Mandates within the Privacy Framework. Taken together, as a User, you are granted not only full ownership and control, but the ability to rightfully distinguish command of your data. In essence, that is Data Sovereignty.
 
