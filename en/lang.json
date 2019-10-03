@@ -4,6 +4,7 @@
   "links": {
     "homepage": "Home page",
     "library": "Library",
+    "blog": "Blog",
     "noc": "Noc",
     "loc": "Loc"
   },
@@ -28,6 +29,9 @@
       "app_types": ["noc", "loc"],
       "app_types_suffix": "."
     }
+  },
+  "blog": {
+    "slug": "Slug Test"
   },
   "footer": {
     "authors": ""
