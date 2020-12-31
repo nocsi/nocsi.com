@@ -6,17 +6,17 @@ eleventyExcludeFromCollections: true
 
 # PRIVACY POLICY
 
-_This Policy was last updated on December 9, 2019._
+_This Policy was last updated on December 20, 2020._
 
 ## INTRODUCTION
 
-Orbit Labs (also referred to herein as “we,” “us,” and “our”) is committed to protecting the privacy and security of the personal information we collect, use, share, and otherwise process as part of our business. We also believe in transparency, and we are committed to informing you about how we treat your personal information. We have established this Privacy Policy to inform you about the privacy practices that we apply to personal information and to inform you about your rights and choices in this regard.
+NOCSI (also referred to herein as “we,” “us,” and “our”) is committed to protecting the privacy and security of the personal information we collect, use, share, and otherwise process as part of our business. We also believe in transparency, and we are committed to informing you about how we treat your personal information. We have established this Privacy Policy to inform you about the privacy practices that we apply to personal information and to inform you about your rights and choices in this regard.
 
 PLEASE READ THIS PRIVACY POLICY CAREFULLY TO UNDERSTAND HOW WE TREAT YOUR PERSONAL INFORMATION AND WHAT CHOICES AND RIGHTS YOU HAVE IN THIS REGARD. IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS OF THIS POLICY, YOU SHOULD NOT ACCESS OR USE THE SITE OR ENGAGE IN COMMUNICATIONS WITH US CONCERNING OUR PRODUCTS OR SERVICES.
 
 ## WHO IS RESPONSIBLE FOR YOUR PERSONAL INFORMATION?
 
-If you are a user in the European Union (the “EU”) or European Economic Area (“EEA”), for purposes of the EU General Data Protection Regulation, 2016/679 (the “GDPR”), Orbit acts as a data controller with respect to the personal information described in this Policy. In this role, Orbit is responsible for implementing the applicable data protection principles and for safeguarding personal information.
+If you are a user in the European Union (the “EU”) or European Economic Area (“EEA”), for purposes of the EU General Data Protection Regulation, 2016/679 (the “GDPR”), NOCSI acts as a data controller with respect to the personal information described in this Policy. In this role, NOCSI is responsible for implementing the applicable data protection principles and for safeguarding personal information.
 
 This Policy does not apply to our processing of personal information as a processor, as defined under the GDPR, on behalf of our customers. Our customers act as data controllers with respect to such data, and questions regarding the data controller’s practices should be directed to the data controller. When we are acting as a data processor, we collect and process personal information in accordance with the instructions provided by the data controller.
 
@@ -24,7 +24,7 @@ This Policy does not apply to our processing of personal information as a proces
 
 This Policy applies to the processing of personal information collected by us when you:
 
-• Visit our websites that display or link to this Policy, including orbit.love (the “Site”);
+• Visit our websites that display or link to this Policy, including nocsi.ccom (the “Site”);
 • Interact with us on our social media pages;
 • Receive communications from us, including emails, chats, phone calls, or, texts; and
 • Use our services as an authorized user where we act as a controller of the personal information.
@@ -208,7 +208,7 @@ If a security breach compromises your personal information, we will notify you a
 
 Please use the Contact Us details at the end of this Policy to exercise your rights and choices under this Policy. If you would like to manage, change, limit, or delete your personal information or if you no longer want to receive any email, postal mail, or telephone contact from us in the future, such requests may be submitted via the “Contact Us” details at the end of this Policy. If you are exercising a right that is the responsibility of our data controller customers, we will direct you to contact the appropriate data controller who is responsible for responding to your request.
 
-_Email Opt-Out_. If you no longer wish to receive communications from us via email, you may opt-out by clicking the “unsubscribe” link available at the bottom of our email communications or by contacting us at privacy@orbit.love and providing your name and email address so that we may identify you in the opt- out process. Once we receive your instruction, we will promptly take corrective action.
+_Email Opt-Out_. If you no longer wish to receive communications from us via email, you may opt-out by clicking the “unsubscribe” link available at the bottom of our email communications or by contacting us at contact@nocsi.com and providing your name and email address so that we may identify you in the opt- out process. Once we receive your instruction, we will promptly take corrective action.
 
 _Cookies_. You may choose to not allow cookies via the cookies consent banner or set your browser to refuse all or some browser cookies or to alert you when cookies are being set. For more information on how to modify your browser settings to block or filter cookies, visit http://www.aboutcookies.org/ or http://www.cookiecentral.com/faq/. You may learn more about internet advertising practices and related consumer resources at http://www.aboutads.info/consumers/, http://www.networkadvertising.org/choices, and http://youronlinechoices.eu/.
 
@@ -219,8 +219,8 @@ _Accuracy and Updating Your Personal Information_. Our goal is to keep your pers
 _Preferences_. If you wish to change your communication preferences or ask that we restrict how we use your personal information, please contact us using the information in the “Contact Us” section of this Policy. You may follow opt-out links on any marketing communications sent to you.
 Complaints. If you believe that your rights relating to your personal information have been violated, you may lodge a complaint with us by contacting us using the information provided in the “Contact Us” section of this Policy.
 
-_California Residents_. Under California Civil Code Section 1798.83, California residents who provide personal information in obtaining products or services for personal, family, or household use may be entitled to request and obtain from us once a calendar year information about the information we shared, if any, with other businesses for direct marketing uses. At present, we do not share your personal information with third parties for those third parties’ direct marketing purposes. Please be aware that not all information sharing is covered by the “Shine the Light” requirements and only information on covered sharing, if any, will be included in our response. As part of the California Online Privacy Protection Act, all users of our Site may make any changes to their information at any time by contacting us at privacy@orbit.love.
-Nevada Residents. Effective October 1, 2019, you may submit a verified request to us at privacy@orbit.love to request that we not make any sale (as defined under Nevada law) of any covered information (as defined under Nevada law) that we have collected or will collect about you. We will respond to any such request as required by Nevada law.
+_California Residents_. Under California Civil Code Section 1798.83, California residents who provide personal information in obtaining products or services for personal, family, or household use may be entitled to request and obtain from us once a calendar year information about the information we shared, if any, with other businesses for direct marketing uses. At present, we do not share your personal information with third parties for those third parties’ direct marketing purposes. Please be aware that not all information sharing is covered by the “Shine the Light” requirements and only information on covered sharing, if any, will be included in our response. As part of the California Online Privacy Protection Act, all users of our Site may make any changes to their information at any time by contacting us at contact@nocsi.com.
+Nevada Residents. Effective October 1, 2019, you may submit a verified request to us at contact@nocsi.com to request that we not make any sale (as defined under Nevada law) of any covered information (as defined under Nevada law) that we have collected or will collect about you. We will respond to any such request as required by Nevada law.
 
 _EU/EEA Residents_. If you are located in the EU or EEA, you have the following rights under the GDPR. All requests should be sent to the address noted in the “Contact Us” section of this Policy, and we will fulfill requests to the extent required by applicable law.
 Right of Access. To the extent required by law, you have the right to receive confirmation as to whether or not personal data concerning you are being processed, and, where that is the case, access to the personal data and the following information: the purposes of the processing; the categories of personal data concerned; and the recipients or categories of recipient to whom the personal data have been or will be disclosed. We will provide a copy of your personal information in compliance with applicable law.
@@ -235,7 +235,7 @@ _Right to Object_. In certain circumstances, you have the right to object to the
 
 _Right to Withdraw Consent_. If you have provided your consent to the collection, processing, and transfer of your personal information, you may have the right to fully or partially withdraw your consent. Once we have received notice that you have withdrawn your consent, in whole or in part, we will no longer process your information for the purpose(s) to which you originally consented and have since withdrawn unless there are compelling legitimate grounds for further processing that override your interests, rights and freedoms or for the establishment, exercise or defense of legal claims. Withdrawal of consent to receive marketing communications will not affect the processing of personal information for the provision of our services.
 
-_Right to Complain_. If you believe we have not processed your personal information in accordance with applicable provisions of the GDPR, we encourage you to contact us at privacy@orbit.love. You also have the right to make a GDPR complaint to the relevant Supervisory Authority or seek a remedy through the courts. A list of Supervisory Authorities is available at: https://edpb.europa.eu/about-edpb/board/members_en. If you need further assistance regarding your rights, please contact us using the contact information provided below and we will consider your request in accordance with applicable law.
+_Right to Complain_. If you believe we have not processed your personal information in accordance with applicable provisions of the GDPR, we encourage you to contact us at contact@nocsi.com. You also have the right to make a GDPR complaint to the relevant Supervisory Authority or seek a remedy through the courts. A list of Supervisory Authorities is available at: https://edpb.europa.eu/about-edpb/board/members_en. If you need further assistance regarding your rights, please contact us using the contact information provided below and we will consider your request in accordance with applicable law.
 
 ### INTERNATIONAL TRANSFERS OF PERSONAL INFORMATION
 
@@ -265,11 +265,3 @@ https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/c
 We reserve the right, at any time, to add to, change, update, or modify this Policy to reflect any changes to the way in which we treat your personal information or in response to changes in law. Should this Policy change, we will post all changes we make to this Policy on this page. If we make material changes to how we treat your personal information, we will also notify you through a notice on the home page of the Site for a reasonable period of time. Any such changes, updates, or modifications shall be effective immediately upon posting on the Site. The date on which this policy was last modified is identified at the beginning of this Policy.
 
 You are expected to, and you acknowledge and agree that it is your responsibility to, carefully review this Policy prior to using the Site, and from time to time, so that you are aware of any changes. Your continued use of the Site after the “Last Updated” date will constitute your acceptance of and agreement to such changes and to our collection and sharing of your personal information according to the terms of the then-current Policy. If you do not agree with this Policy and our practices, do not access, view, or use any part of the Site.
-
-### CONTACT US
-
-For more information, or if you have any questions or concerns regarding this Privacy Policy, wish to exercise your rights, or wish to lodge a complaint with us, you may contact us using the information below, and we will do our best to assist you. Please note, if your communication is sensitive, you may wish to contact us by postal mail or telephone.
-
-In Writing: 325 9th St, San Francisco, CA 94103
-
-By Email: privacy@orbit.love

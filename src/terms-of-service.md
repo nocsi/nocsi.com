@@ -6,9 +6,9 @@ eleventyExcludeFromCollections: true
 
 # TERMS OF USE
 
-Last Updated: December 9, 2019
+Last Updated: December 20, 2020
 
-These Terms of Use form a legal agreement entered into by and between you, the user of the public portions of this website, orbit.love (the “Site”), and any organization on behalf of which you are using or accessing this website, and Orbit Labs, Inc. (also referred to herein as “we,” “us,” and “our”). By using or accessing the Site, and/or by clicking “I Agree” to accept or agree to these Terms of Use when this option is made available to you, you signify your agreement to these Terms of Use as well as our Privacy Policy (1) which is incorporated herein by reference.
+These Terms of Use form a legal agreement entered into by and between you, the user of the public portions of this website, nocsi.com (the “Site”), and any organization on behalf of which you are using or accessing this website, and NOCSI. (also referred to herein as “we,” “us,” and “our”). By using or accessing the Site, and/or by clicking “I Agree” to accept or agree to these Terms of Use when this option is made available to you, you signify your agreement to these Terms of Use as well as our Privacy Policy (1) which is incorporated herein by reference.
 
 1. TERMS.
 
@@ -22,11 +22,11 @@ THIS SITE IS OFFERED AND AVAILABLE TO USERS WHO ARE 16 YEARS OF AGE OR OLDER. YO
 
 3. SITE OWNERSHIP AND INTELLECTUAL PROPERTY.
 
-The Site as well as its contents, features, functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof), and all information, products, and services offered by us to you in connection with the Site (collectively, the “Content”) are protected under applicable copyrights, trademarks, and other proprietary (including but not limited to intellectual property) rights pursuant to international conventions and U.S. and other laws. The Site and the Content are the property of Orbit Labs, Inc. and/or the applicable third-party licensors, and all right, title, and interest in and to the Site and the Content will remain with Orbit Labs, Inc. or such third-party licensors. Our logos, page headers, custom graphics, and other icons are service marks, trademarks, registered service marks, or registered trademarks of Orbit Labs, Inc. All other products, names, and company logos mentioned on the Site or in the Content are trademarks of their respective owners.
+The Site as well as its contents, features, functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof), and all information, products, and services offered by us to you in connection with the Site (collectively, the “Content”) are protected under applicable copyrights, trademarks, and other proprietary (including but not limited to intellectual property) rights pursuant to international conventions and U.S. and other laws. The Site and the Content are the property of NOCSI. and/or the applicable third-party licensors, and all right, title, and interest in and to the Site and the Content will remain with NOCSI. or such third-party licensors. Our logos, page headers, custom graphics, and other icons are service marks, trademarks, registered service marks, or registered trademarks of NOCSI. All other products, names, and company logos mentioned on the Site or in the Content are trademarks of their respective owners.
 
 These Terms of Use permit you to use the Site exclusively for your personal and other non-commercial use. You do not acquire ownership rights to the Site or any Content, other than those rights in the materials that you submit to us or otherwise enter through the Site, if any, that you may have or any rights that we may specifically grant you in writing, such as the limited license to use the Site, as further described below. These Terms of Use do not grant you any right, title, interest, license (express or implied) to any patent, trademark, service mark, copyright, trade secret or other intellectual property right of the Company or the respective intellectual property owners.
 
-You will abide by any and all additional copyright notices, information, or restrictions contained in any Content. You will not modify, adapt, translate, reverse engineer, decompile, or disassemble the Site or any Content. You may only use the Site and the Content as expressly permitted herein, and any other use is prohibited. Any copying, republication, or redistribution of the foregoing, including by caching, framing, or similar means, is expressly prohibited without the prior written consent of Orbit Labs, Inc. and/or the respective intellectual property rights holder identified in the subject content, which consent may be granted or withheld at the sole discretion of the rights holder. Except as expressly authorized by us, you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit, or create derivative works from the Content or the Site.
+You will abide by any and all additional copyright notices, information, or restrictions contained in any Content. You will not modify, adapt, translate, reverse engineer, decompile, or disassemble the Site or any Content. You may only use the Site and the Content as expressly permitted herein, and any other use is prohibited. Any copying, republication, or redistribution of the foregoing, including by caching, framing, or similar means, is expressly prohibited without the prior written consent of NOCSI. and/or the respective intellectual property rights holder identified in the subject content, which consent may be granted or withheld at the sole discretion of the rights holder. Except as expressly authorized by us, you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit, or create derivative works from the Content or the Site.
 
 We accommodate and do not interfere with standard technical measures used by copyright owners to protect their materials. Pursuant to 17 U.S.C. Section 512 as amended by Title II of the Digital Millennium Copyright Act, we reserve the right to terminate your use of the Site or the information and content contained therein if we determine in our sole and absolute discretion that you are involved in infringing activity, regardless of whether such alleged infringement is a first-time or repeat occurrence and/or whether the material or activity is ultimately determined to be infringing.
 
@@ -78,7 +78,7 @@ We may disable all or any social media features and any links at any time withou
 
 9. WARRANTIES AND DISCLAIMERS.
 
-a. YOUR USE OF THE SITE, THE CONTENT, OR MATERIALS OBTAINED THROUGH THEM IS AT YOUR OWN RISK. THE SITE AND THE CONTENT ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. ORBIT LABS, INC. HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESSED OR IMPLIED, STATUTORY, OR OTHERWISE. NEITHER ORBIT LABS, INC. NOR ANY PERSON ASSOCIATED WITH ORBIT LABS, INC. MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE OR THE CONTENT, OR THE MERCHANTABILITY, NON-INFRINGEMENT, FITNESS FOR PARTICULAR PURPOSE, OR OTHERWISE RELATING TO THE SITE OR THE CONTENT. THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
+a. YOUR USE OF THE SITE, THE CONTENT, OR MATERIALS OBTAINED THROUGH THEM IS AT YOUR OWN RISK. THE SITE AND THE CONTENT ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. NOCSI. HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESSED OR IMPLIED, STATUTORY, OR OTHERWISE. NEITHER NOCSI NOR ANY PERSON ASSOCIATED WITH NOCSI MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE OR THE CONTENT, OR THE MERCHANTABILITY, NON-INFRINGEMENT, FITNESS FOR PARTICULAR PURPOSE, OR OTHERWISE RELATING TO THE SITE OR THE CONTENT. THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
 
 b. YOU UNDERSTAND THAT WE CANNOT AND DO NOT GUARANTEE OR WARRANT THAT FILES AVAILABLE FOR DOWNLOADING FROM THE INTERNET OR THE SITE WILL BE FREE OF VIRUSES OR OTHER DESTRUCTIVE CODE. YOU ARE RESPONSIBLE FOR IMPLEMENTING SUFFICIENT PROCEDURES AND CHECKPOINTS TO SATISFY YOUR PARTICULAR REQUIREMENTS FOR ANTI-VIRUS PROTECTION AND ACCURACY OF DATA INPUT AND OUTPUT, AND FOR MAINTAINING A MEANS EXTERNAL TO OUR SITE FOR ANY RECONSTRUCTION OF ANY LOST DATA.
 
@@ -86,7 +86,7 @@ c. TO THE FULLEST EXTENT PROVIDED BY LAW, WE WILL NOT BE LIABLE FOR ANY LOSS OR 
 
 10. LIMITATION OF LIABILITY.
 
-TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL ORBIT LABS, INC. OR ANY OF ITS EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE SITE, THE CONTENT, OR ANY USE OR INABILITY TO USE ANY OF THE FOREGOING, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF USE, LOSS OF GOODWILL, OR LOSS OF DATA, WHETHER OR NOT CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE.
+TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL NOCSI OR ANY OF ITS EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE SITE, THE CONTENT, OR ANY USE OR INABILITY TO USE ANY OF THE FOREGOING, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF USE, LOSS OF GOODWILL, OR LOSS OF DATA, WHETHER OR NOT CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE.
 
 THE FOREGOING DOES NOT AFFECT ANY LIABILITY WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
 
@@ -114,7 +114,7 @@ If any provision of these Terms of Use is held by a court or other tribunal of c
 
 15. INDEMNIFICATION.
 
-You agree to indemnify, defend, and hold harmless Orbit Labs, Inc. and its successors and assigns and all of their respective officers, directors, agents, employees, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, obligations, costs, expenses or fees (including reasonable attorneys’ fees) arising out of or relating to (i) your breach of these Terms of Use; (ii) your violation of any third party’s right, including, without limitation, any copyright, property right, or privacy right; or (iii) any claim that content provided by you caused damage or loss to a third party. This defense and indemnification obligation will survive your use of the Site and any termination of this Agreement.
+You agree to indemnify, defend, and hold harmless NOCSI and its successors and assigns and all of their respective officers, directors, agents, employees, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, obligations, costs, expenses or fees (including reasonable attorneys’ fees) arising out of or relating to (i) your breach of these Terms of Use; (ii) your violation of any third party’s right, including, without limitation, any copyright, property right, or privacy right; or (iii) any claim that content provided by you caused damage or loss to a third party. This defense and indemnification obligation will survive your use of the Site and any termination of this Agreement.
 
 16. TERMS OF USE MAY CHANGE.
 
@@ -122,10 +122,10 @@ We may modify these Terms of Use from time to time in our sole discretion. We wi
 
 17. ENTIRE AGREEMENT.
 
-These Terms of Use, together with any documents expressly referred to in them, including our Privacy Policy (1) constitute the sole and entire agreement between you and us with respect to the Site and Content, and they supersede all previous written or oral agreements. These Terms of Use do not supersede or amend any other agreement with Orbit Labs, Inc.
+These Terms of Use, together with any documents expressly referred to in them, including our Privacy Policy (1) constitute the sole and entire agreement between you and us with respect to the Site and Content, and they supersede all previous written or oral agreements. These Terms of Use do not supersede or amend any other agreement with NOCSI.
 
 18. CONTACT INFORMATION.
 
-All feedback, comments, requests for technical support, and other communications relating to the Site should be directed to privacy@orbit.love.
+All feedback, comments, requests for technical support, and other communications relating to the Site should be directed to contact@nocsi.com.
 
-(1) https://orbit.love/privacy-policy
+(1) https://nocsi.com/privacy-policy
