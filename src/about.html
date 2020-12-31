@@ -1,0 +1,19 @@
+---
+layout: page
+title: About NOCSI
+description: We want to help you deliver a stellar community experience, quantify your business impact, and become the next generation of community and DevRel leadership.
+eleventyNavigation:
+  key: About
+---
+
+{% from "macros/typography.njk" import title %}
+
+<div class="slanted-top max-w-full bg-gray-800">
+  <div class="flex flex-col max-w-screen-sm px-4 md:px-0 mx-auto">
+    {{ title("About") }}
+  </div>
+</div>
+
+{% include "about/team.njk" %} {% include "about/investors.njk" %}
+
+<div class="mb-20"></div>
