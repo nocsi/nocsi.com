@@ -15,11 +15,16 @@ eleventyNavigation:
   <div
     class="flex flex-col max-w-screen-sm px-4 md:px-0 mx-auto items-center justify-center"
   >
-    {{ title("LOC") }} {{ tagline("") }} {{ request_access_button(inverted=true) }}
+    <img
+    alt=""
+    style="height: 120px;"
+    src="/assets/images/loc_site.svg"
+  />
+     {{ tagline("Decentralized secret vault") }} {{ request_access_button(inverted=true) }}
   </div>
 </div>
 
-{{ subhead("Turn code into community.") }} 
+{{ subhead("No servers, only your devices.") }} 
 
 {%
   set feature_profiles = {
@@ -39,9 +44,9 @@ eleventyNavigation:
     ]
   }
 %}
-{{ single_feature_with_image(feature_profiles) }}
+<!-- {{ single_feature_with_image(feature_profiles) }} -->
 
-{% include "loc/builders.njk" %}
+<!-- {% include "loc/builders.njk" %} -->
 
 {%
   set feature_core_contributors = {
@@ -57,7 +62,7 @@ eleventyNavigation:
     ]
   }
 %}
-{{ single_feature_with_image(feature_core_contributors) }}
+<!--{ single_feature_with_image(feature_core_contributors) }}-->
 
 {%
   set feature_search_box = {
@@ -81,4 +86,4 @@ eleventyNavigation:
     ]
   }
 %}
-{{ double_feature_with_images("View activity across your community and repos", feature_search_box, feature_identity_resolution, "sm:-mt-8") }}
+<!--{{ double_feature_with_images("View activity across your community and repos", feature_search_box, feature_identity_resolution, "sm:-mt-8") }} -->

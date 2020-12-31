@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NOC
-description: .
+description: Ephemeral Virtual Private Network, operation-based cloud networking.
 eleventyNavigation:
   key: NOC
 ---
@@ -14,7 +14,12 @@ eleventyNavigation:
   <div
     class="flex flex-col max-w-screen-sm px-4 md:px-0 mx-auto items-center justify-center"
   >
-    {{ title("NOC") }} {{ tagline(" Multi-Cloud Operations. ") }} 
+  <img
+    alt=""
+    style="height: 120px;"
+    src="/assets/images/noc_site.svg"
+  />
+    {{ tagline(" Ephemeral Virtual Private Network (VPN) ") }} 
     <button class="bg-gray-200 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-300 focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
             <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
@@ -28,21 +33,19 @@ eleventyNavigation:
   </div>
 </div>
 
-{{ subhead("Never miss a moment.") }}
+{{ subhead("Don't trust your VPN provider unless it's you.") }}
 
 {%
   set feature_community_feed = {
     image_src: "/assets/images/activity-feed.png",
     sections: [
       {
-        title: "Community feed",
-        content: "Never miss an important mention, comment, pull request, or other
-              essential activity with Orbit's
-              <strong>Discourse, GitHub, and Twitter integrations</strong>."
+        title: "Sovereign",
+        content: "Privacy and Security is rooted in ownership. NOC enables you to describe and establish secure infrastructure on your <strong>own platform</strong>."
       },
       {
-        title: "Automatic activity tracking",
-        content: "<strong>Connect directly to Discourse, GitHub, and Twitter</strong>, or use our API to automatically understand which developers are most active in your community."
+        title: "Private",
+        content: "There's a wide range of <strong>Platform as a Service (PaaS)</strong>. Build your VPNs using as many different providers as you desire. It's as easy as downloading the app, authenticating with your provider and pressing a button."
       }
     ]
   }
@@ -55,14 +58,12 @@ eleventyNavigation:
 
 {%
   set feature_core_contributors = {
-    title: "Celebrate your core contributors",
+    title: "VPNs self-destruct and redeploy automatically",
     image_src: "/assets/images/core-contributors.png",
     sections: [
       {
         title: "We’ll keep an eye on things",
-        content: "Orbit will keep track of key moments across your community and
-            let you know when Members achieve important milestones. Never miss
-            a moment, and respond right from inside Orbit."
+        content: "Most VPNs are not built for privacy and security. Noc is not most VPNs. Schedule your VPN to automatically destroy itself and then redeploy itself at the frequency of your choosing. This allows you to stay elusive by consistently changing the IPs your device sits behind, which makes it more difficult for attackers to find you."
       }
     ]
   }
@@ -97,7 +98,7 @@ eleventyNavigation:
   }
 %}
 
-{{ double_feature_with_images("Data tools that give you superpowers", feature_search_box, feature_identity_resolution) }}
+<!-- {{ double_feature_with_images("", feature_search_box, feature_identity_resolution) }} -->
 
 {%
   set feature_metrics_report = {
@@ -125,5 +126,5 @@ eleventyNavigation:
 %}
 
 <div class="mt-10"></div>
-{{ double_feature_with_images("Metrics that matter", feature_metrics_report, feature_metrics_share, "sm:-mt-10") }}
+<!-- {{ double_feature_with_images("Metrics that matter", feature_metrics_report, feature_metrics_share, "sm:-mt-10") }} -->
  
