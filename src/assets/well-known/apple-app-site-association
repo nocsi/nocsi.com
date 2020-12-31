@@ -1,0 +1,22 @@
+{
+  "appLinks": {
+    "apps": [],
+    "details" : 
+    {
+      "6H298R6MA7.com.nocsi.loc":
+      {
+        "paths": 
+        [
+        "/loc/*"
+        ]
+      },
+      "6H298R6MA7.com.nocsi.noc":
+      {
+        "paths": 
+        [
+        "/noc/*"
+        ]
+      },
+    }
+  }
+}
