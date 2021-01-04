@@ -2,13 +2,15 @@
 {% from "../macros/buttons.njk" import contact_us_button %}
 
 <div
-  class="clip-path nocsi-background w-full mt-10 sm:mt-36 pb-36"
+  class="clip-path nocsi-background w-full mt-10 sm:mt-36 pb-"
 >
   <div class="sm:clearfix"></div>
   <div class="max-w-screen-md px-4 mx-auto flex flex-col items-center">
     <p class="text-black text-3xl sm:text-2xl font-bold text-center">
       Get in touch with our expert team today to stay ahead of the curve.
     </p>
+    <a href="/contact" class="inline md:inline-block mb-3 md:mb-2 text-sm font-medium text-gray-300 hover:text-primary transition-colors duration-100 ease-in">
     {{ contact_us_button(inverted=false) }}
+    </a>
   </div>
 </div>
