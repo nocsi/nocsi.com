@@ -59,6 +59,7 @@
     "airtable": "^0.7.1",
     "alpinejs": "^2.3.5",
     "email-validator": "^2.0.4",
-    "focus-visible": "^5.1.0"
+    "focus-visible": "^5.1.0",
+    "vanilla-lazyload": "^17.1.2"
   }
 }
