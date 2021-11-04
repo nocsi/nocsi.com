@@ -114,13 +114,13 @@ h1 {
 
 .footer_link__desktop:hover {
   color: white;
-  border-bottom: 2px solid white;
+  text-decoration: underline;
 }
 
 .footer_link__desktop:focus {
   @apply outline-none;
   color: white;
-  border-bottom: 2px solid white;
+  text-decoration: underline;
 }
 
 .footer_sublink__desktop {
