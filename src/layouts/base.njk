@@ -19,7 +19,7 @@
       @keydown.escape="showModal = false"
       @togglemodal="showModal = $event.detail.value"
     >
-      <main class="flex-grow">
+      <main class="flex-grow w-full">
         {{ content | safe }}
       </main>
       {% include "early-access-form.njk" %}
