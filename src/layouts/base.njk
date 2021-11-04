@@ -1,13 +1,13 @@
+<!DOCTYPE html>
 <html lang="{{ meta.lang }}" class="bg-white antialiased">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ renderData.title or title or meta.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
-    <link rel="stylesheet" href="{{ '/prism.css' | url }}" />
     {% include "meta.njk" %}
+    <link rel="stylesheet" href="/css/main.css?v={% version %}"/>
+    <link rel="stylesheet" href="{{ '/css/prism.css' | url }}" />
+    <script defer src="/js/alpine.js?v={% version %}"></script>
   </head>
-  <body class="text-gray-900 leading-normal">
+  <body class="text-gray-900 leading-normal antialiased">
     <div hidden>{% svgsprite %}</div>
     <a href="#content" class="sr-only">skip to main content</a>
     <div
@@ -22,7 +22,7 @@
       </main>
       {% include "early-access-form.njk" %}
     </div>
-    <script defer type="text/javascript" src="{{ '/assets/main.js' | url }}"></script>
+    <script defer src="/js/main.js?v={% version %}"></script>
     <!-- LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
   </body>
   {% include "alpine-methods.njk" %}

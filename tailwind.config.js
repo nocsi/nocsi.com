@@ -1,5 +1,11 @@
 module.exports = {
-  purge: ['dist/**/*.html'],
+  mode: 'jit',
+  purge: {
+    content: ['dist/**/*.html'],
+    options: {
+      safelist: [],
+    },
+  },
   theme: {
     extend: {
       boxShadow: {

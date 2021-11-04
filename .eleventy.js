@@ -10,6 +10,9 @@ const shortcodes = require('./utils/shortcodes')
 const svgsprite = require('./utils/svgsprite')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+const htmlmin = require('html-minifier')
+const now = String(Date.now())
+
 module.exports = function (eleventyConfig) {
   /**
    * Add plugins
@@ -70,17 +73,28 @@ module.exports = function (eleventyConfig) {
    *
    * @link https://www.11ty.io/docs/copy/
    */
-  eleventyConfig.addPassthroughCopy({ 'src/assets/scripts/sw.js': 'sw.js' })
+   eleventyConfig.addPassthroughCopy({
+    './node_modules/alpinejs/dist/cdn.js': './js/alpine.js',
+  })
+  eleventyConfig.addPassthroughCopy({ 'src/assets/scripts/sw.js': './js/sw.js' })
   eleventyConfig.addPassthroughCopy({
-    'src/assets/scripts/prism.js': 'prism.js',
+    'src/assets/scripts/prism.js': './js/prism.js',
   })
   eleventyConfig.addPassthroughCopy({
-    'src/assets/styles/prism.css': 'prism.css',
+    'src/assets/styles/prism.css': './css/prism.css',
+  })
+  eleventyConfig.addPassthroughCopy({
+    'src/assets/styles/_base.css': './css/_base.css',
   })
   eleventyConfig.addPassthroughCopy('src/assets/images')
   eleventyConfig.addPassthroughCopy('src/assets/fonts')
   eleventyConfig.addPassthroughCopy('src/site.webmanifest')
   eleventyConfig.addPassthroughCopy('src/robots.txt')
+
+  eleventyConfig.addShortcode('version', function () {
+    return now
+  })
+
 
   /**
    * Set custom markdown library instance
@@ -156,6 +170,26 @@ module.exports = function (eleventyConfig) {
         new Date(b.data.jobListing.publishedAt) - new Date(a.data.jobListing.publishedAt)
       )
     })
+  })
+
+  /**
+   * HTML Minifier for production builds
+   */
+   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+    if (
+      process.env.ELEVENTY_ENV == 'production' &&
+      outputPath &&
+      outputPath.endsWith('.html')
+    ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      })
+      return minified
+    }
+
+    return content
   })
 
   return {
