@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="{{ meta.lang }}" class="bg-white antialiased">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +22,7 @@
       </main>
       {% include "early-access-form.njk" %}
     </div>
-    <script src="{{ '/assets/main.js' | url }}"></script>
+    <script defer src="{{ '/assets/main.js' | url }}"></script>
     <!-- LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
   </body>
   {% include "alpine-methods.njk" %}
