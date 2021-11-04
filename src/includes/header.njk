@@ -107,7 +107,7 @@
             <div class="inline-flex flex-col" id="products_header_link">
               {% set isResourcesPageRegExp = r/^\/(podcast)\//g %}
               <a href="#" class="ml-8 font-medium text-gray-100 {% if isResourcesPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Resources</a>
-              <div class="hidden flex-col absolute rounded bg-gray-900">
+              <div class="hidden flex-col absolute z-20 rounded bg-gray-900">
                 <span class="mx-8 mb-3 text-white">Resources</span>
                 <!--
                 <a
@@ -163,7 +163,7 @@
             <div class="px-5 pt-4 flex items-center justify-between">
               <div>
                 <a href="/">
-                  <svg 
+                  <svg
                     width="108px"
                     height="28px"
                     viewBox="0 0 108 28"
@@ -224,22 +224,22 @@
                 role="menuitem"
                 >Company</span
               >
-              <a href="/about/" 
+              <a href="/about/"
                 class="header_link__mobile ml-4"
                 role="menuitem"
                 >About</a
               >
-              <a href="/careers/" 
+              <a href="/careers/"
                 class="header_link__mobile ml-4"
                 role="menuitem"
                 >Careers</a
               >
-              <a href="/contact/" 
+              <a href="/contact/"
                 class="header_link__mobile ml-4"
                 role="menuitem"
                 >Contact</a
               >
-              <a href="/press/" 
+              <a href="/press/"
                 class="header_link__mobile ml-4"
                 role="menuitem"
                 >Press</a
