@@ -1,7 +1,5 @@
 module.exports = {
-  purge: {
-    enabled: false,
-  },
+  purge: ['dist/**/*.html'],
   theme: {
     extend: {
       boxShadow: {
