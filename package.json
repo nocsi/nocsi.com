@@ -13,7 +13,7 @@
     "build-css": "NODE_ENV=production npx tailwindcss -i ./src/assets/styles/main.css -c ./tailwind.config.js -o dist/css/main.css --minify",
     "build-js": "npx esbuild ./src/assets/scripts/main.js --outfile=./dist/js/main.js  --bundle --target=es2016 --minify",
     "build": "NODE_ENV=production concurrently \"npm:build-*\" && ELEVENTY_ENV=production eleventy && cp dist/404/index.html dist/404.html",
-    "watch-css": "npx tailwindcss -i src/assets/styles/main.css -c ./tailwind.config.js -o dist/css/main.css --watch",
+    "watch-css": "npx tailwindcss -i ./src/assets/styles/main.css -c ./tailwind.config.js -o dist/css/main.css --watch",
     "watch-js": "npx esbuild ./src/assets/scripts/main.js --outfile=./dist/js/main.js --bundle --target=es2016 --watch",
     "watch": "NODE_ENV=development concurrently \"ELEVENTY_ENV=development eleventy --serve\"  \"npm:watch-*\"",
     "start": "npm run watch"
