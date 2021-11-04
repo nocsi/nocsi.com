@@ -1,11 +1,17 @@
 module.exports = {
   mode: 'jit',
   purge: {
-    content: ['dist/**/*.html'],
+    content: [
+        "./dist/**/*.html",
+        "./src/**/*.liquid",
+        "./src/**/*.njk",
+        "./src/**/*.html",
+      ],
     options: {
       safelist: [],
     },
   },
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       boxShadow: {
@@ -154,7 +160,9 @@ module.exports = {
       black: '#000',
     },
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [
     require('@tailwindcss/ui'),
     require('@tailwindcss/ui')({

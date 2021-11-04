@@ -1,4 +1,4 @@
-<div x-data="{isOpen: false}" class="relative bg-gray-800">
+<div x-data="{isMobileNavOpen: false}" class="relative bg-gray-800">
   <div class="max-w-screen-xl mx-auto">
     <div
       class="relative z-10 pb-8 bg-gray-800 sm:pb-6 md:pb-8 lg:w-full lg:pb-12 xl:pb-14"
@@ -18,7 +18,7 @@
                 <button
                   type="button"
                   aria-label="Toggle mobile navigation menu"
-                  @click="isOpen = !isOpen"
+                  @click="isMobileNavOpen = !isMobileNavOpen"
                   class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                 >
                   <svg
@@ -38,10 +38,10 @@
               </div>
             </div>
           </div>
-          <div class="hidden md:block md:ml-10 md:pr-4">
+          <div class="hidden md:block md:ml-10 md:pr-8">
             <div class="inline-flex flex-col" id="products_header_link">
               {% set isProductPageRegExp = r/^\/products\//g %}
-              <a href="#" class="ml-8 font-medium text-white {% if isProductPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Products</a>
+              <a href="#" class="mr-8 font-medium text-white {% if isProductPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Products</a>
               <div class="hidden flex-col absolute rounded bg-gray-900">
                 <span class="mx-8 mb-3 text-white">Products</span>
                 <a
@@ -103,7 +103,7 @@
               </div>
             </div>
             {% set isBlogRegExp = r/^\/(blog)\//g %}
-            <a href="/blog/" class="header_link__desktop text-gray-100 {% if isBlogRegExp.test(page.url) %}active border-white{% endif %}">Blog</a>
+            <a href="/blog/" class="header_link__desktop text-gray-100 ml-8 {% if isBlogRegExp.test(page.url) %}active border-white{% endif %}">Blog</a>
             <div class="inline-flex flex-col" id="products_header_link">
               {% set isResourcesPageRegExp = r/^\/(podcast)\//g %}
               <a href="#" class="ml-8 font-medium text-gray-100 {% if isResourcesPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Resources</a>
@@ -136,25 +136,28 @@
       </div>
 
       <div
-        x-show="isOpen"
+        x-show="isMobileNavOpen"
+        @click.away="isMobileNavOpen = false"
         x-description="Mobile menu, show/hide based on menu open state."
-        x-transition:enter="duration-150 ease-out"
-        x-transition:enter-start="opacity-0 scale-95"
-        x-transition:enter-end="opacity-100 scale-100"
-        x-transition:leave="duration-100 ease-in"
-        x-transition:leave-start="opacity-100 scale-100"
-        x-transition:leave-end="opacity-0 scale-95"
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="opacity-0 transform scale-x-0 -translate-x-1/2"
+        x-transition:enter-end="opacity-100 transform scale-x-100 translate-x-0"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="opacity-100 transform scale-x-100 translate-x-0"
+        x-transition:leave-end="opacity-0 transform scale-x-0 -translate-x-1/2"
+        x-show.transition="true"
+        :class="{ 'absolute z-10 shadow-3xl rounded-lg ' : isMobileNavOpen , 'hidden' : !isMobileNavOpen}"
+        class="inset-x-0 transform shadow-lg z-50 bg-white  w-screen"
         x-cloak
       >
-        <div class="rounded-lg shadow-md">
+        <div>
           <div
-            class="rounded-lg bg-white shadow-xs overflow-hidden"
+            class="rounded-lg bg-white  grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16"
             role="menu"
             aria-orientation="vertical"
             aria-labelled-by="main-menu"
           >
-            <div class="px-5 pt-4 flex items-center justify-between">
+            <div class="flex justify-between items-center p-6 col-span-2 lg:col-span-4">
               <div>
                 <a href="/">
                   <svg
@@ -175,7 +178,7 @@
                 <button
                   type="button"
                   aria-label="Toggle mobile navigation menu"
-                  @click="isOpen = !isOpen"
+                  @click="isMobileNavOpen = !isMobileNavOpen"
                   class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                 >
                   <svg
@@ -194,73 +197,104 @@
                 </button>
               </div>
             </div>
-            <div class="px-2 pt-2 pb-3">
-              <span
-                class="header_link__mobile text-gray-400"
+            <div class="rounded-lg  mx-auto col-span-2 grid grid-cols-3 lg:grid-cols-3 gap-4">
+            <div class="col-span-2">
+              <h3
+                class="header_link__mobile text-sm font-medium tracking-wide text-gray-500 uppercase text-gray-400"
                 role="menuitem"
-                >Products</span
+                >Products</h3
               >
-              <a
-                href="/products/noc/"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >NOC</a
-              >
-              <a
-                href="/products/kyozo/"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >KYOZO</a
-              >
-              <a href="/services/" class="header_link__mobile" role="menuitem">Services</a>
-              <span
-                class="header_link__mobile text-gray-400"
-                role="menuitem"
-                >Company</span
-              >
-              <a href="/about/"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >About</a
-              >
-              <a href="/careers/"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >Careers</a
-              >
-              <a href="/contact/"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >Contact</a
-              >
-              <a href="/press/"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >Press</a
-              >
-              <a
-                href="/blog/"
-                class="header_link__mobile"
-                role="menuitem"
-                >Blog</a
-              >
-              <span
-                class="header_link__mobile text-gray-400"
-                role="menuitem"
-                >Resources</span
-              >
-              <a
-                href="https://docs.nocsi.com/docs"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="header_link__mobile ml-4"
-                role="menuitem"
-                >Docs and Guides</a
-              >
-              <a href="https://github.com/nocsi/" rel="noopener noreferrer" class="header_link__mobile" role="menuitem">GitHub</a>
-              <a href="https://twitter.com/nocsi_/" rel="noopener noreferrer" class="header_link__mobile" role="menuitem"
-                >Twitter</a
-              >
+              <ul role="list" class="mt-5 space-y-6">
+                <li class="flow-root">
+                  <a
+                  href="/products/noc/"
+                  class="header_link__mobile -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
+                  role="menuitem">
+                    <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="ml-4">Noc</span>
+                  </a>
+                </li>
+                <li class="flow-root">
+                  <a
+                    href="/products/kyozo/"
+                    class="header_link__mobile -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
+                    role="menuitem">
+                      <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                       <span class="ml-4">Kyozo</span>
+                    </a>
+                </li>
+                <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                <a href="/services/" class="header_link__mobile" role="menuitem">Services</a>
+              </h3>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                <a href="/services/" class="header_link__mobile" role="menuitem">Company</a>
+              </h3>
+              <ul role="list" class="mt-5 space-y-6">
+                <li class="flow-root">
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/user-group -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="ml-4">About</span>
+              </a>
+                </li>
+
+                <li class="flow-root">
+              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/globe-alt -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+                <span class="ml-4">Careers</span>
+              </a>
+            </li>
+
+            <li class="flow-root">
+              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/bookmark-alt -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="ml-4">Contact</span>
+              </a>
+            </li>
+
+            <li class="flow-root">
+              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/desktop-computer -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="ml-4">Press</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
+            <a href="/resources/" class="header_link__mobile" role="menuitem">Resources</a>
+          </h3>
+           <ul role="list" class="mt-6 space-y-6">
+           <li class="flow-root">
+              <a href="https://docs.nocsi.com/docs" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/bookmark-alt -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="ml-4">Docs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
             </div>
           </div>
         </div>

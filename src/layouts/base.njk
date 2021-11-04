@@ -4,8 +4,10 @@
     <title>{{ renderData.title or title or meta.title }}</title>
     {% include "meta.njk" %}
     <link rel="stylesheet" href="/css/main.css?v={% version %}"/>
+    <link rel="stylesheet" href="/css/_base.css?v={% version %}"/>
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}" />
     <script defer src="/js/alpine.js?v={% version %}"></script>
+    <script defer src="/js/main.js?v={% version %}"></script>
   </head>
   <body class="text-gray-900 leading-normal antialiased">
     <div hidden>{% svgsprite %}</div>
@@ -22,7 +24,7 @@
       </main>
       {% include "early-access-form.njk" %}
     </div>
-    <script defer src="/js/main.js?v={% version %}"></script>
+
     <!-- LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
   </body>
   {% include "alpine-methods.njk" %}
