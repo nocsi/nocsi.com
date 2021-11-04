@@ -1,18 +1,18 @@
 {
   "appLinks": {
     "apps": [],
-    "details" : 
+    "details" :
     {
-      "6H298R6MA7.com.nocsi.loc":
+      "6H298R6MA7.com.nocsi.kyozo":
       {
-        "paths": 
+        "paths":
         [
-        "/loc/*"
+        "/kyozo/*"
         ]
       },
       "6H298R6MA7.com.nocsi.noc":
       {
-        "paths": 
+        "paths":
         [
         "/noc/*"
         ]

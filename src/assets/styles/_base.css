@@ -8,9 +8,9 @@ html {
 */
 
 /**
- * Disable animations if the user has turned on the a11y option for reduced motion due to 
+ * Disable animations if the user has turned on the a11y option for reduced motion due to
  * vestibular disorders etc.
- * 
+ *
  * @link https://css-tricks.com/introduction-reduced-motion-media-query/#article-header-id-3
  */
 @media (prefers-reduced-motion: reduce) {
@@ -28,18 +28,18 @@ html {
 }
 
 /**
- * `x-cloak` attributes are removed from elements when Alpine initializes. 
+ * `x-cloak` attributes are removed from elements when Alpine initializes.
  * This is useful for hiding pre-initialized DOM.
- * 
+ *
  * @link https://github.com/alpinejs/alpine#x-cloak
- * 
+ *
  */
 [x-cloak] {
   display: none !important;
 }
 
 /**
- * Selectively disable the default focus style by selecting for the case when the polyfill 
+ * Selectively disable the default focus style by selecting for the case when the polyfill
  * is loaded and [data-focus-visible-added] attribute is not applied to the element:
  *
  * @link https://github.com/WICG/focus-visible#2-update-your-css
@@ -63,7 +63,7 @@ h1 {
 }
 
 /**
- * Tailwind components styles 
+ * Tailwind components styles
  */
 
 .spin {
@@ -130,7 +130,7 @@ h1 {
 
 .footer_sublink__desktop:hover {
   color: white;
-  border-bottom: 2px solid white;
+  text-decoration: underline;
 }
 
 .footer_sublink__desktop:focus {
@@ -203,7 +203,7 @@ h1 {
 }
 
 /**
- * Hero slant 
+ * Hero slant
  */
 
 .slanted-top {
