@@ -11,14 +11,7 @@
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}" />
     <script defer src="/js/alpine.js?v={% version %}"></script>
     <script defer src="/js/main.js?v={% version %}"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfWSyodAAAAAINQRg7vwz5XGNj_7W3LtD2rLA4s">
-      grecaptcha.ready(function() {
-       grecaptcha.execute('6LfWSyodAAAAAINQRg7vwz5XGNj_7W3LtD2rLA4s', {action: 'homepage'})
-       .then(function(token) {
-         document.getElementById('captchaResponse').value = token;
-       });
-     });
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfWSyodAAAAAINQRg7vwz5XGNj_7W3LtD2rLA4s"></script>
   </head>
   <body class="text-gray-900">
     <div hidden>{% svgsprite %}</div>
