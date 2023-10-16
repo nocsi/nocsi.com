@@ -35,19 +35,13 @@ const { title, description, mainClass } = Astro.props;
       mainNavItems={[...navMenuConfig.links]}
       sidebarNavItems={[
         ...navMenuConfig.infosNav,
-        ...navMenuConfig.examplesNav,
       ]}
       slot="mobile-nav-header"
       client:load
     />
 
-    <nav slot="right-header">
-      <a
-        href="/login"
-        class={cn(buttonVariants({ variant: "secondary", size: "sm" }), "px-4")}
-      >
-        Login
-      </a>
+    <nav slot="right-header"
+      <span>|</span>
     </nav>
   </Header>
 
