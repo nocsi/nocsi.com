@@ -1,0 +1,304 @@
+<div x-data="{isMobileNavOpen: false}" class="relative bg-gray-800">
+  <div class="max-w-screen-lg mx-auto">
+    <div
+      class="relative z-10 pb-8 bg-gray-800 sm:pb-6 md:pb-8 lg:w-full lg:pb-12 xl:pb-14"
+    >
+      <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <nav class="relative flex items-center justify-between sm:h-10">
+          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div class="flex items-center justify-between w-full md:w-auto">
+              <a href="/" class="focus:outline-none focus:shadow-outline-red">
+                <img
+                  alt=""
+                  style="height: 36px;"
+                  src="/assets/images/nocsi_header.svg"
+                />
+              </a>
+              <div class="-mr-2 flex items-center md:hidden">
+                <button
+                  type="button"
+                  aria-label="Toggle mobile navigation menu"
+                  @click="isMobileNavOpen = !isMobileNavOpen"
+                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    stroke="white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block md:ml-10 md:pr-8">
+            <div class="inline-flex flex-col" id="products_header_link">
+              {% set isProductPageRegExp = r/^\/products\//g %}
+              <a href="#" class="mr-8 font-medium text-white {% if isProductPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Products</a>
+              <div class="hidden flex-col absolute rounded bg-gray-900">
+                <span class="mx-8 mb-3 text-white">Products</span>
+                <a
+                  href="/products/noc/"
+                  class="flex flex-row mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+               <g id="New-Group-Copy">
+                <defs><path id="Path" d="M9.963 9.533 C9.54 9.972 9.447 10.84 9.755 11.475 L14.191 20.614 C14.505 21.262 15.114 21.444 15.551 21.02 L21.96 14.814 C22.421 14.367 22.529 13.466 22.2 12.804 L17.552 3.452 C17.229 2.802 16.605 2.652 16.159 3.115 Z"/></defs><defs> <path id="stroke-path" d="M9.763 10.774 C9.763 10.682 9.688 10.607 9.595 10.607 9.503 10.607 9.428 10.682 9.428 10.774 9.428 10.867 9.503 10.942 9.595 10.942 9.688 10.942 9.763 10.867 9.763 10.774 Z"/> <path id="stroke-path-1" d="M10.186 12.017 C10.186 11.924 10.111 11.849 10.019 11.849 9.926 11.849 9.851 11.924 9.851 12.017 9.851 12.11 9.926 12.185 10.019 12.185 10.111 12.185 10.186 12.11 10.186 12.017 Z"/> <path id="stroke-path-2" d="M10.769 13.218 C10.769 13.126 10.694 13.051 10.602 13.051 10.509 13.051 10.434 13.126 10.434 13.218 10.434 13.311 10.509 13.386 10.602 13.386 10.694 13.386 10.769 13.311 10.769 13.218 Z"/> <path id="stroke-path-3" d="M11.352 14.42 C11.352 14.327 11.277 14.252 11.185 14.252 11.092 14.252 11.017 14.327 11.017 14.42 11.017 14.513 11.092 14.588 11.185 14.588 11.277 14.588 11.352 14.513 11.352 14.42 Z"/> <path id="stroke-path-4" d="M11.935 15.621 C11.935 15.529 11.86 15.454 11.768 15.454 11.675 15.454 11.6 15.529 11.6 15.621 11.6 15.714 11.675 15.789 11.768 15.789 11.86 15.789 11.935 15.714 11.935 15.621 Z"/> <path id="stroke-path-5" d="M12.519 16.823 C12.519 16.73 12.443 16.655 12.351 16.655 12.258 16.655 12.183 16.73 12.183 16.823 12.183 16.915 12.258 16.991 12.351 16.991 12.443 16.991 12.519 16.915 12.519 16.823 Z"/> <path id="stroke-path-6" d="M13.102 18.024 C13.102 17.932 13.027 17.857 12.934 17.857 12.841 17.857 12.766 17.932 12.766 18.024 12.766 18.117 12.841 18.192 12.934 18.192 13.027 18.192 13.102 18.117 13.102 18.024 Z"/> <path id="stroke-path-7" d="M13.685 19.226 C13.685 19.133 13.61 19.058 13.517 19.058 13.424 19.058 13.349 19.133 13.349 19.226 13.349 19.318 13.424 19.394 13.517 19.394 13.61 19.394 13.685 19.318 13.685 19.226 Z"/> <path id="stroke-path-8" d="M14.268 20.427 C14.268 20.335 14.193 20.26 14.1 20.26 14.007 20.26 13.932 20.335 13.932 20.427 13.932 20.52 14.007 20.595 14.1 20.595 14.193 20.595 14.268 20.52 14.268 20.427 Z"/> <path id="stroke-path-9" d="M15.226 21.22 C15.226 21.127 15.151 21.052 15.058 21.052 14.965 21.052 14.89 21.127 14.89 21.22 14.89 21.312 14.965 21.387 15.058 21.387 15.151 21.387 15.226 21.312 15.226 21.22 Z"/> <path id="stroke-path-10" d="M16.265 20.492 C16.265 20.399 16.19 20.324 16.097 20.324 16.005 20.324 15.93 20.399 15.93 20.492 15.93 20.584 16.005 20.659 16.097 20.659 16.19 20.659 16.265 20.584 16.265 20.492 Z"/> <path id="stroke-path-11" d="M17.224 19.563 C17.224 19.47 17.149 19.395 17.057 19.395 16.964 19.395 16.889 19.47 16.889 19.563 16.889 19.655 16.964 19.73 17.057 19.73 17.149 19.73 17.224 19.655 17.224 19.563 Z"/> <path id="stroke-path-12" d="M18.184 18.633 C18.184 18.541 18.109 18.466 18.016 18.466 17.923 18.466 17.848 18.541 17.848 18.633 17.848 18.726 17.923 18.801 18.016 18.801 18.109 18.801 18.184 18.726 18.184 18.633 Z"/> <path id="stroke-path-13" d="M19.143 17.704 C19.143 17.612 19.068 17.537 18.975 17.537 18.883 17.537 18.808 17.612 18.808 17.704 18.808 17.797 18.883 17.872 18.975 17.872 19.068 17.872 19.143 17.797 19.143 17.704 Z"/> <path id="stroke-path-14" d="M20.102 16.775 C20.102 16.683 20.027 16.608 19.935 16.608 19.842 16.608 19.767 16.683 19.767 16.775 19.767 16.868 19.842 16.943 19.935 16.943 20.027 16.943 20.102 16.868 20.102 16.775 Z"/> <path id="stroke-path-15" d="M21.062 15.846 C21.062 15.754 20.987 15.678 20.894 15.678 20.801 15.678 20.726 15.754 20.726 15.846 20.726 15.939 20.801 16.014 20.894 16.014 20.987 16.014 21.062 15.939 21.062 15.846 Z"/> <path id="stroke-path-16" d="M22.021 14.917 C22.021 14.824 21.946 14.749 21.853 14.749 21.761 14.749 21.686 14.824 21.686 14.917 21.686 15.01 21.761 15.085 21.853 15.085 21.946 15.085 22.021 15.01 22.021 14.917 Z"/> <path id="stroke-path-17" d="M22.512 13.734 C22.512 13.642 22.436 13.567 22.344 13.567 22.251 13.567 22.176 13.642 22.176 13.734 22.176 13.827 22.251 13.902 22.344 13.902 22.436 13.902 22.512 13.827 22.512 13.734 Z"/> <path id="stroke-path-18" d="M22.147 12.499 C22.147 12.406 22.072 12.331 21.979 12.331 21.886 12.331 21.811 12.406 21.811 12.499 21.811 12.591 21.886 12.666 21.979 12.666 22.072 12.666 22.147 12.591 22.147 12.499 Z"/> <path id="stroke-path-19" d="M21.552 11.303 C21.552 11.21 21.477 11.135 21.385 11.135 21.292 11.135 21.217 11.21 21.217 11.303 21.217 11.395 21.292 11.47 21.385 11.47 21.477 11.47 21.552 11.395 21.552 11.303 Z"/> <path id="stroke-path-20" d="M20.958 10.107 C20.958 10.014 20.883 9.939 20.79 9.939 20.698 9.939 20.623 10.014 20.623 10.107 20.623 10.199 20.698 10.275 20.79 10.275 20.883 10.275 20.958 10.199 20.958 10.107 Z"/> <path id="stroke-path-21" d="M20.364 8.911 C20.364 8.818 20.289 8.743 20.196 8.743 20.103 8.743 20.028 8.818 20.028 8.911 20.028 9.003 20.103 9.079 20.196 9.079 20.289 9.079 20.364 9.003 20.364 8.911 Z"/> <path id="stroke-path-22" d="M19.769 7.715 C19.769 7.622 19.694 7.547 19.602 7.547 19.509 7.547 19.434 7.622 19.434 7.715 19.434 7.808 19.509 7.883 19.602 7.883 19.694 7.883 19.769 7.808 19.769 7.715 Z"/> <path id="stroke-path-23" d="M19.175 6.519 C19.175 6.426 19.1 6.351 19.007 6.351 18.915 6.351 18.84 6.426 18.84 6.519 18.84 6.612 18.915 6.687 19.007 6.687 19.1 6.687 19.175 6.612 19.175 6.519 Z"/> <path id="stroke-path-24" d="M18.581 5.323 C18.581 5.23 18.506 5.155 18.413 5.155 18.32 5.155 18.245 5.23 18.245 5.323 18.245 5.416 18.32 5.491 18.413 5.491 18.506 5.491 18.581 5.416 18.581 5.323 Z"/> <path id="stroke-path-25" d="M17.986 4.127 C17.986 4.034 17.911 3.959 17.819 3.959 17.726 3.959 17.651 4.034 17.651 4.127 17.651 4.22 17.726 4.295 17.819 4.295 17.911 4.295 17.986 4.22 17.986 4.127 Z"/> <path id="stroke-path-26" d="M17.336 3.002 C17.336 2.909 17.26 2.834 17.168 2.834 17.075 2.834 17 2.909 17 3.002 17 3.095 17.075 3.17 17.168 3.17 17.26 3.17 17.336 3.095 17.336 3.002 Z"/> <path id="stroke-path-27" d="M16.176 3.271 C16.176 3.178 16.101 3.103 16.008 3.103 15.915 3.103 15.84 3.178 15.84 3.271 15.84 3.363 15.915 3.439 16.008 3.439 16.101 3.439 16.176 3.363 16.176 3.271 Z"/> <path id="stroke-path-28" d="M15.248 4.232 C15.248 4.139 15.173 4.064 15.081 4.064 14.988 4.064 14.913 4.139 14.913 4.232 14.913 4.324 14.988 4.399 15.081 4.399 15.173 4.399 15.248 4.324 15.248 4.232 Z"/> <path id="stroke-path-29" d="M14.321 5.193 C14.321 5.1 14.246 5.025 14.153 5.025 14.06 5.025 13.985 5.1 13.985 5.193 13.985 5.285 14.06 5.36 14.153 5.36 14.246 5.36 14.321 5.285 14.321 5.193 Z"/> <path id="stroke-path-30" d="M13.393 6.153 C13.393 6.061 13.318 5.986 13.226 5.986 13.133 5.986 13.058 6.061 13.058 6.153 13.058 6.246 13.133 6.321 13.226 6.321 13.318 6.321 13.393 6.246 13.393 6.153 Z"/> <path id="stroke-path-31" d="M12.466 7.114 C12.466 7.022 12.391 6.947 12.298 6.947 12.205 6.947 12.13 7.022 12.13 7.114 12.13 7.207 12.205 7.282 12.298 7.282 12.391 7.282 12.466 7.207 12.466 7.114 Z"/> <path id="stroke-path-32" d="M11.538 8.075 C11.538 7.983 11.463 7.907 11.371 7.907 11.278 7.907 11.203 7.983 11.203 8.075 11.203 8.168 11.278 8.243 11.371 8.243 11.463 8.243 11.538 8.168 11.538 8.075 Z"/> <path id="stroke-path-33" d="M10.611 9.036 C10.611 8.943 10.536 8.868 10.443 8.868 10.35 8.868 10.275 8.943 10.275 9.036 10.275 9.129 10.35 9.204 10.443 9.204 10.536 9.204 10.611 9.129 10.611 9.036 Z"/> </defs> <path id="Path-2" d="M5.937 9.449 C5.514 9.888 5.422 10.756 5.73 11.391 L10.165 20.531 C10.479 21.178 11.088 21.36 11.525 20.937 L17.934 14.73 C18.395 14.283 18.503 13.382 18.174 12.72 L13.526 3.368 C13.203 2.719 12.579 2.569 12.133 3.031 Z" fill="none" stroke="#FFFFFF" stroke-width="0.839" stroke-opacity="1" stroke-linejoin="round"/> <path id="Path-3" d="M2.079 9.365 C1.656 9.804 1.563 10.672 1.871 11.307 L6.307 20.447 C6.621 21.094 7.23 21.277 7.667 20.853 L14.076 14.647 C14.537 14.2 14.645 13.298 14.316 12.636 L9.668 3.284 C9.345 2.635 8.721 2.485 8.275 2.947 Z" fill="#FFFFFF" fill-opacity="1" stroke="#FFFFFF" stroke-width="0.839" stroke-opacity="1" stroke-linejoin="round"/> </g>
+              </svg>
+              <span class="align-middle ml-4 leading-normal"> NOC </span>
+                  </a
+                >
+                <a
+                  href="/products/kyozo/"
+                  class="flex flex-row mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"> <g id="New-Group-Copy"> <path id="Path" d="M1.055 6.209 L1.055 12.903 6.634 9.184 Z" fill="#FFFFFF" fill-opacity="1" stroke="#FFFFFF" stroke-width="0.465" stroke-opacity="1" stroke-linejoin="round"/> <path id="Path-1" d="M11.004 -0.021 L1.148 6.116 11.376 11.695 11.376 23.132 24.022 15.228" fill="none" stroke="#FFFFFF" stroke-width="0.465" stroke-opacity="1" stroke-linejoin="round"/> <path id="Path-2" d="M24.022 3.605 L11.376 11.695" fill="none" stroke="#FFFFFF" stroke-width="0.465" stroke-opacity="1" stroke-linejoin="round"/> <path id="Path-3" d="M8.4 1.652 L18.722 7.14 18.815 18.389" fill="none" stroke="#FFFFFF" stroke-width="0.465" stroke-opacity="1" stroke-linejoin="round"/></g>
+              </svg>
+              <span class="align-middle ml-4 leading-normal"> KYOZO </span>
+                  </a
+                >
+                <!--
+                <a
+                  href="/products/procsi/"
+                  class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >PROCSI</a
+                >
+                !-->
+              </div>
+            </div>
+            <a href="/services/" class="header_link__desktop text-white {% if page.url == '/services/' %}active border-white{% endif %}">Services</a>
+            <span class="ml-8 font-medium text-gray-100 border-none pb-1">|</a>
+            <div class="inline-flex flex-col" id="products_header_link">
+              {% set isCompanyPageRegExp = r/^\/(company)\//g %}
+              <a href="#" class="ml-8 font-medium text-gray-100 {% if isCompanyPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Company</a>
+              <div class="hidden flex-col absolute rounded bg-gray-900">
+                <span class="mx-8 mb-3 text-white">Company</span>
+                <a
+                  href="/about/"
+                  class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >About</a
+                >
+                <a
+                  href="/careers/"
+                  class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >Careers</a
+                >
+                <a
+                  href="/contact/"
+                  class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >Contact</a
+                >
+                <a
+                  href="/press/"
+                  class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >Press</a
+                >
+              </div>
+            </div>
+            {% set isBlogRegExp = r/^\/(blog)\//g %}
+            <a href="/blog/" class="header_link__desktop text-gray-100 ml-8 {% if isBlogRegExp.test(page.url) %}active border-white{% endif %}">Blog</a>
+            <div class="inline-flex flex-col" id="products_header_link">
+              {% set isResourcesPageRegExp = r/^\/(podcast)\//g %}
+              <a href="#" class="ml-8 font-medium text-gray-100 {% if isResourcesPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Resources</a>
+              <div class="hidden flex-col absolute z-20 rounded bg-gray-900">
+                <span class="mx-8 mb-3 text-white">Resources</span>
+                <a
+                  href="https://docs.nocsi.com/docs"
+                  target='_blank'
+                  rel="noopener noreferrer"
+                  class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
+                  >Docs and Guides</a
+                >
+              </div>
+            </div>
+            <a href="https://github.com/nocsi/" rel="noopener noreferrer" class="ml-8 pb-1 transition duration-150 ease-in-out opacity-75 hover:border-b-0 hover:opacity-100"
+              ><img
+                alt="GitHub"
+                style="width: 20px; display: inline;"
+                src="/assets/images/GitHub-Mark-Light-32px.png"
+            /></a>
+
+            <a href="https://twitter.com/nocsi_/" rel="noopener noreferrer" class="ml-4 opacity-75 hover:opacity-100"
+              ><img
+                alt="Twitter"
+                style="width: 22px; display: inline;"
+                src="/assets/images/Twitter-Mark-Light-32px.png"
+            /></a>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        x-show="isMobileNavOpen"
+        @click.away="isMobileNavOpen = false"
+        x-description="Mobile menu, show/hide based on menu open state."
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="opacity-0 transform scale-x-0 -translate-x-1/2"
+        x-transition:enter-end="opacity-100 transform scale-x-100 translate-x-0"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="opacity-100 transform scale-x-100 translate-x-0"
+        x-transition:leave-end="opacity-0 transform scale-x-0 -translate-x-1/2"
+        x-show.transition="true"
+        :class="{ 'absolute z-10 shadow-3xl rounded-lg ' : isMobileNavOpen , 'hidden' : !isMobileNavOpen}"
+        class="inset-x-0 transform shadow-lg bg-white"
+        x-cloak
+      >
+        <div>
+          <div
+            class="rounded-lg bg-white grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelled-by="main-menu"
+          >
+            <div class="flex justify-between items-center p-6 col-span-2 lg:col-span-4">
+              <div>
+                <a href="/">
+                  <svg
+                    width="108px"
+                    height="28px"
+                    viewBox="0 0 108 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#3A4045"
+                  >
+                    <title class="jsx-587368892">NOCSI</title>
+                    <g class="jsx-587368892">
+                       <path id="path" d="M67.776 27.422 C60.314 27.422 55.289 22.983 55.289 14.032 55.289 5.117 60.314 0.567 67.776 0.567 L75.938 0.567 75.938 7.78 69.178 7.78 C65.188 7.78 63.01 9.889 63.01 14.032 63.01 18.138 65.188 20.209 69.178 20.209 L75.865 20.209 75.938 20.209 86.17 20.209 C86.946 20.209 87.5 19.655 87.5 18.989 87.5 18.508 87.316 18.175 86.762 17.657 L81.295 13.106 C79.005 11.145 78.045 9.407 78.045 7.002 78.045 3.673 80.667 0.567 84.656 0.567 L99.323 0.567 99.323 7.817 89.016 7.817 C88.203 7.817 87.686 8.409 87.686 9.037 87.686 9.555 87.907 9.963 88.535 10.481 L93.854 14.918 C95.922 16.657 97.143 18.692 97.143 21.022 97.143 24.388 94.519 27.422 90.53 27.422 L75.938 27.422 75.865 27.422 67.776 27.422 Z M100.209 27.422 L100.209 0.567 107.893 0.567 107.893 27.422 100.209 27.422 Z M40.291 0.012 C32.57 0.012 26.29 6.263 26.29 14.031 26.29 21.689 32.57 27.977 40.291 27.977 48.011 27.977 54.254 21.689 54.254 14.031 54.254 6.263 48.011 0.012 40.291 0.012 Z M40.291 7.41 C43.948 7.41 46.866 10.332 46.866 14.031 46.866 17.694 43.948 20.616 40.291 20.616 36.634 20.616 33.641 17.694 33.641 14.031 33.641 10.332 36.634 7.41 40.291 7.41 Z M24.85 0.567 L17.425 0.567 17.425 14.956 7.081 0.567 0.026 0.567 0.026 27.422 7.414 27.422 7.414 12.774 17.757 27.422 24.85 27.422 Z" fill="#000000" fill-opacity="1" stroke="none"/>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="-mr-2">
+                <button
+                  type="button"
+                  aria-label="Toggle mobile navigation menu"
+                  @click="isMobileNavOpen = !isMobileNavOpen"
+                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    stroke="currentColor"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="rounded-lg  mx-auto col-span-2 grid grid-cols-3 lg:grid-cols-3 gap-4">
+            <div class="col-span-2">
+              <h3
+                class="header_link__mobile text-sm font-medium tracking-wide text-gray-500 uppercase text-gray-400"
+                role="menuitem"
+                >Products</h3
+              >
+              <ul role="list" class="mt-5 space-y-6">
+                <li class="flow-root">
+                  <a
+                  href="/products/noc/"
+                  class="header_link__mobile -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
+                  role="menuitem">
+                    <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="ml-4">Noc</span>
+                  </a>
+                </li>
+                <li class="flow-root">
+                  <a
+                    href="/products/kyozo/"
+                    class="header_link__mobile -m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
+                    role="menuitem">
+                      <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                       <span class="ml-4">Kyozo</span>
+                    </a>
+                </li>
+                <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                <a href="/services/" class="header_link__mobile" role="menuitem">Services</a>
+              </h3>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                <a href="/services/" class="header_link__mobile" role="menuitem">Company</a>
+              </h3>
+              <ul role="list" class="mt-5 space-y-6">
+                <li class="flow-root">
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/user-group -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="ml-4">About</span>
+              </a>
+                </li>
+
+                <li class="flow-root">
+              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/globe-alt -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+                <span class="ml-4">Careers</span>
+              </a>
+            </li>
+
+            <li class="flow-root">
+              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/bookmark-alt -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="ml-4">Contact</span>
+              </a>
+            </li>
+
+            <li class="flow-root">
+              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/desktop-computer -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="ml-4">Press</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
+            <a href="/resources/" class="header_link__mobile" role="menuitem">Resources</a>
+          </h3>
+           <ul role="list" class="mt-6 space-y-6">
+           <li class="flow-root">
+              <a href="https://docs.nocsi.com/docs" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                <!-- Heroicon name: outline/bookmark-alt -->
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="ml-4">Docs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

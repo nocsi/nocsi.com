@@ -1,0 +1,19 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all -%}
+    {%- if not item.data.excludeFromSitemap -%}
+    <url>
+        <loc>{{ item.url | url | absoluteUrl(build.url) }}</loc>
+        {% if item.data.post.publishedAt %}
+            <lastmod>{{ item.data.post.publishedAt | toJSDate | dateToFormat('yyyy-MM-dd') }}</lastmod>
+        {% else %}
+            <lastmod>{{ item.date | dateToFormat('yyyy-MM-dd') }}</lastmod>
+        {% endif %}
+    </url>
+    {%- endif -%}
+{%- endfor -%}
+</urlset>

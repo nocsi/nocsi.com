@@ -1,0 +1,63 @@
+{% macro request_access_button(inverted=false, extra_classes="") %}
+  <div class="mb-6 rounded">
+    <button
+      class="cursor-pointer px-8 py-3 shadow-bottom text-base leading-6 font-bold rounded {{ 'text-red-500 bg-white hover:text-red-600' if inverted else 'text-white bg-red-500 hover:text-gray-100' }} focus:outline-none focus:shadow-outline transition duration-150 ease-in-out {{ extra_classes }}"
+      aria-label="Open early access form"
+      @click="showModal = true"
+    >
+      Request access
+    </button>
+  </div>
+{% endmacro %}
+
+{% macro learn_more_button(inverted=false, extra_classes="") %}
+  <div class="mb-6 rounded">
+    <button
+      class="cursor-pointer px-8 py-3 shadow-bottom text-base leading-6 font-bold rounded {{ 'text-red-500 bg-white hover:text-red-600' if inverted else 'text-white bg-red-500 hover:text-gray-100' }} focus:outline-none focus:shadow-outline transition duration-150 ease-in-out {{ extra_classes }}"
+      aria-label="Open early access form"
+      @click="showModal = true"
+    >
+      Learn More
+    </button>
+  </div>
+{% endmacro %}
+
+{% macro contact_us_button(inverted=false, extra_classes="") %}
+  <div class="mb-6 rounded">
+    <button
+      class="cursor-pointer px-8 py-3 shadow-bottom text-base leading-6 font-bold rounded {{ 'text-red-500 bg-white hover:text-red-600' if inverted else 'text-white bg-red-500 hover:text-gray-100' }} focus:outline-none focus:shadow-outline transition duration-150 ease-in-out {{ extra_classes }}"
+      aria-label="Open contact form"
+    >
+      Contact Us
+    </button>
+  </div>
+{% endmacro %}
+
+{% macro view_open_opportunities(inverted=false, extra_classes="") %}
+  <div class="mb-6 rounded">
+    <a
+      href="/careers/#open-opportunities"
+      class="cursor-pointer px-8 py-3 shadow-bottom text-base leading-6 font-bold rounded {{ 'text-red-500 bg-white hover:text-red-600' if inverted else 'text-white bg-red-500 hover:text-gray-100' }} focus:outline-none focus:shadow-outline transition duration-150 ease-in-out {{ extra_classes }}"
+    >
+      View open opportunities
+    </a>
+  </div>
+{% endmacro %}
+
+{% macro listen_on(platform, href, logo) %}
+  <div class="mb-6 shadow-bottom text-base leading-6 rounded text-red-500 bg-white hover:text-red-600 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+    <a
+      href={{ href }}
+      class="cursor-pointer"
+    >
+      <div class="flex flex-row items-center px-6 py-3">
+        <img src="{{ logo }}" alt="apple podcast icon" class="relative w-10 h-10">
+        <div class="ml-4">
+          <span>Listen on</span>
+          <br />
+          <span class="font-bold">{{ platform }}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+{% endmacro %}

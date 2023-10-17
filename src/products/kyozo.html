@@ -1,0 +1,89 @@
+---
+layout: page
+title: KYOZO
+description:
+eleventyNavigation:
+  key: KYOZO
+---
+
+{% from "macros/typography.njk" import subhead, tagline, title %}
+{% from "macros/buttons.njk" import request_access_button %}
+{% from "macros/separator.njk" import separator %}
+{% from "macros/features.njk" import single_feature_with_image, double_feature_with_images %}
+
+<div class="slanted-top max-w-full bg-gray-800">
+  <div
+    class="flex flex-col max-w-screen-sm px-4 md:px-0 mx-auto items-center justify-center"
+  >
+    <img
+    alt="Kyozo Logo"
+    style="height: 120px;"
+    src="/assets/images/kyozo_site.svg"
+  />
+     {{ tagline("Distributed Living Vault") }} {{ request_access_button(inverted=true) }}
+  </div>
+</div>
+
+{{ subhead("No servers, only your devices.") }}
+
+{%
+  set feature_profiles = {
+    image_src: "/assets/images/profiles.png",
+    sections: [
+      {
+        title: "View developer profiles",
+        content: "View a developer’s favorite languages, areas of interest, and recent
+            community activity at a glance.
+            <strong>All automatically imported from GitHub</strong>."
+      },
+      {
+        title: "Add activities via&nbsp;API",
+        content: "Record members and contributions outside of GitHub via the NOCSI API. Works great for
+            contributions like documentation, events, and content."
+      }
+    ]
+  }
+%}
+<!-- {{ single_feature_with_image(feature_profiles) }} -->
+
+<!-- {% include "loc/builders.njk" %} -->
+
+{%
+  set feature_core_contributors = {
+    title: "Celebrate your core contributors",
+    image_src: "/assets/images/core-contributors.png",
+    sections: [
+      {
+        title: "We’ll keep an eye on things",
+        content: "NOCSI will keep track of key moments across your community
+        and let you know when Members achieve important milestones.
+        Never miss a moment, and respond right from inside NOCSI."
+      }
+    ]
+  }
+%}
+<!--{ single_feature_with_image(feature_core_contributors) }}-->
+
+{%
+  set feature_search_box = {
+    image_src: "/assets/images/maintainer-metrics-1.png",
+    sections: [
+      {
+        title: "See what’s working, and&nbsp;where",
+        content: "Understand the impact of your efforts across your community."
+      }
+    ]
+  }
+%}
+{%
+  set feature_identity_resolution = {
+    image_src: "/assets/images/maintainer-metrics-2.png",
+    sections: [
+      {
+        title: "Share the success",
+        content: "NOCSI generates daily and weekly community impact updates to help you stay in the loop."
+      }
+    ]
+  }
+%}
+<!--{{ double_feature_with_images("View activity across your community and repos", feature_search_box, feature_identity_resolution, "sm:-mt-8") }} -->

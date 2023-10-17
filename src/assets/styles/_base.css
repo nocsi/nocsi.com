@@ -1,0 +1,347 @@
+/**
+ * Smoothly animate the scroll position, instead of a straight jump.
+ */
+/*
+html {
+  scroll-behavior: smooth;
+}
+*/
+
+/**
+ * Disable animations if the user has turned on the a11y option for reduced motion due to
+ * vestibular disorders etc.
+ *
+ * @link https://css-tricks.com/introduction-reduced-motion-media-query/#article-header-id-3
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    transition-duration: 0.01s !important;
+  }
+}
+
+/**
+ * ::selection selector: color, background, cursor, and outline.
+ */
+::selection {
+  @apply bg-red-500 text-white;
+}
+
+/**
+ * `x-cloak` attributes are removed from elements when Alpine initializes.
+ * This is useful for hiding pre-initialized DOM.
+ *
+ * @link https://github.com/alpinejs/alpine#x-cloak
+ *
+ */
+[x-cloak] {
+  display: none !important;
+}
+
+/**
+ * Selectively disable the default focus style by selecting for the case when the polyfill
+ * is loaded and [data-focus-visible-added] attribute is not applied to the element:
+ *
+ * @link https://github.com/WICG/focus-visible#2-update-your-css
+ */
+.js-focus-visible :focus:not([data-focus-visible-added]) {
+  @apply outline-none;
+}
+
+/**
+ * Global styles
+ */
+
+body {
+  font-family: 'Avenir Next', 'system-ui', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+h1 {
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+/**
+ * Tailwind components styles
+ */
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.header_link__desktop {
+  @apply ml-8 font-medium text-white border-none pb-1 transition duration-150 ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.header_link__desktop:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.header_link__desktop:focus {
+  @apply outline-none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.header_link__mobile {
+  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-700 transition duration-150 ease-in-out;
+}
+
+.header_link__mobile:hover {
+  @apply text-gray-900 bg-gray-100;
+}
+
+.header_link__mobile:focus {
+  @apply outline-none text-gray-900 bg-gray-100;
+}
+
+.footer_link__desktop {
+  @apply text-xs font-medium text-gray-400 border-none pb-1 transition duration-150 ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.footer_link__desktop:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_link__desktop:focus {
+  @apply outline-none;
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_sublink__desktop {
+  @apply text-xs font-medium text-white border-none pb-1 transition duration-150 ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.footer_sublink__desktop:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_sublink__desktop:focus {
+  @apply outline-none;
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_link__mobile {
+  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-700 transition duration-150 ease-in-out;
+}
+
+.footer_link__mobile:hover {
+  @apply text-gray-900 bg-gray-100;
+}
+
+.footer_link__mobile:focus {
+  @apply outline-none text-gray-900 bg-gray-100;
+}
+
+#use_case_left {
+  border-radius: 7px 7px 0px 0px;
+  border-top: 1px solid #d3d6da;
+  border-left: 1px solid #d3d6da;
+  border-right: 1px solid #d3d6da;
+  box-shadow: 3px 0px 0 rgba(108, 77, 246, 0.15);
+  @media (min-width: 640px) {
+    border-radius: 7px 0px 0px 7px;
+    border-right: unset;
+    border-bottom: 1px solid #d3d6da;
+    box-shadow: 0px 3px 0 rgba(108, 77, 246, 0.15);
+  }
+}
+
+#use_case_right {
+  border-radius: 0px 0px 7px 7px;
+  border: 1px solid #d3d6da;
+  box-shadow: 3px 3px 0 rgba(108, 77, 246, 0.15);
+  @media (min-width: 640px) {
+    border-radius: 0px 7px 7px 0px;
+  }
+}
+
+#products_header_link > div {
+  border-top: 10px solid #1E2124;
+  top: -2px;
+}
+
+#products_header_link:focus-within > div {
+  display: flex;
+}
+
+#products_header_link:hover > div {
+  display: flex;
+}
+
+#products_header_link > a:focus + div {
+  display: flex;
+}
+
+/**
+ * Slant variables
+ */
+
+:root {
+  --magic-number: 0.0262; /* tan(3°)/2 */
+  --content-width: 100vw;
+  --skew-padding: calc(var(--content-width) * var(--magic-number));
+  --skew-margin: calc(2 * var(--content-width) * var(--magic-number));
+}
+
+/**
+ * Hero slant
+ */
+
+.slanted-top {
+  position: relative;
+  margin-bottom: var(--skew-margin);
+  padding-bottom: var(--skew-padding);
+}
+.slanted-top:before,
+.slanted-top:after {
+  position: absolute;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 75%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.slanted-top:before {
+  top: 0;
+  transform: skewY(0deg);
+  transform-origin: 0% 0;
+}
+
+.slanted-top:after {
+  bottom: 0;
+  transform: skewY(3deg);
+  transform-origin: 0 100%;
+}
+
+.screenshot-slanted {
+  position: relative;
+  margin-top: var(--skew-margin);
+  padding-top: var(--skew-padding);
+  background: unset;
+}
+.screenshot-slanted:before,
+.screenshot-slanted:after {
+  position: absolute;
+  background: #68727d;
+  content: '';
+  display: block;
+  height: 75%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.screenshot-slanted:before {
+  top: 0;
+  bottom: 0;
+  transform: skewY(3deg);
+  transform-origin: 0 100%;
+}
+
+.screenshot-slanted:after {
+  bottom: 0;
+  transform: skewY(0deg);
+  transform-origin: 100%;
+}
+
+#single_view_block {
+  height: 170px;
+
+  @media (min-width: 640px) {
+    height: 350px;
+  }
+}
+
+#for_builders_block {
+  height: 550px;
+
+  @media (min-width: 640px) {
+    height: 340px;
+  }
+}
+
+/**
+ * Orbit Model slant (using clip-path so that the background image isn’t distorted)
+ */
+
+.clip-path {
+  position: relative;
+  margin-top: calc((var(--skew-padding) * -1) - 2px);
+  padding: calc(
+      (var(--skew-padding) * 2) - (var(--skew-padding) - var(--skew-padding))
+    )
+    0 4em;
+  clip-path: polygon(
+    0% 0%,
+    100% calc(var(--skew-padding) * 2),
+    100% 100%,
+    0% 100%
+  );
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% calc(var(--skew-padding) * 2),
+    100% 100%,
+    0% 100%
+  );
+  border-bottom: 1px solid #2a123f;
+}
+
+.orbit-background {
+  background-image: url('images/orbit-observatory-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nocsi-background {
+  background-image: url('images/nocsi-observatory-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ob-maintainers-metrics {
+  margin-top: 20px;
+  @media (min-width: 640px) {
+    margin-top: -250px;
+  }
+}
+
+.ob-highlight {
+  /* border-radius: 1em 0 1em 0; */
+  text-shadow: 1px 1px 1px #fff;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 59%,
+    rgba(0, 212, 255, 0.1) 60%,
+    rgba(56, 96, 255, 0.1)
+  );
+}
+
+.ob-break-out {
+  @media (min-width: 1280px) {
+    width: 60vw !important; /* !important here overrides the `.prose table` specificity */
+    margin: 0 calc(50% - min(30vw, 512px));
+    max-width: 1024px;
+  }
+}

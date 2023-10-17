@@ -1,0 +1,73 @@
+---
+layout: page
+title: NOCSI — Careers
+eleventyNavigation:
+  key: Careers
+---
+
+{% from "macros/typography.njk" import tagline, title %} {% from
+"macros/buttons.njk" import view_open_opportunities %} {% from "macros/tag.njk"
+import tag %}
+
+<div class="slanted-top max-w-full bg-gray-800">
+  <div
+    class="flex flex-col max-w-screen-sm px-4 md:px-0 mx-auto items-center justify-center"
+  >
+  <!--{{ tagline(" NOCSI’s mission is to empower
+    developer advocates and community teams to build thriving communities and
+    prove the value of their work. ") }}-->
+    {{ title("Careers @ NOCSI") }}  {{
+    view_open_opportunities(inverted=true) }}
+  </div>
+</div>
+
+<div class="prose prose-lg max-w-screen-sm mx-auto my-10 pt-10 px-4 sm:px-0">
+
+  <h2 id="open-opportunities">Open opportunities</h2>
+
+  {% set jobListings = collections.jobListings %}
+
+  <div class="ob-break-out overflow-x-auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Skills</th>
+        </tr>
+      </thead>
+      {% for jobListing in jobListings %} {% set currentJobListing =
+      jobListing.data.jobListing %}
+      <tr>
+        <td><a href="{{ jobListing.url }}">{{ currentJobListing.role }}</a></td>
+        <td>
+          {% for type in currentJobListing.type %} {{ tag(type.name, type.color)
+          }} {% endfor %}
+        </td>
+        <td>
+          {% for status in currentJobListing.status %} {{ tag(status.name,
+          status.color) }} {% endfor %}
+        </td>
+        <td>
+          {% for skill in currentJobListing.skills %} {{ tag(skill.name,
+          skill.color) }} {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <p>
+    If anything interests you, see the contact details in the post or send an
+    email to <a href="mailto:contact@nocsi.com">contact@nocsi.com</a> and
+    introduce yourself. We'd love to meet you.
+  </p>
+
+  <div class="p-4 bg-gray-100">
+    <p style="margin: 0px;">
+      <strong>Oh, and one more thing.</strong> If you could really see yourself
+      at NOCSI but don't see a role that fits what you're looking for... please still let us know.
+    </p>
+  </div>
+</div>

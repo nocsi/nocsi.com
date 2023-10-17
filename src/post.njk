@@ -1,0 +1,108 @@
+---
+layout: page
+tags:
+  - blogPost
+pagination:
+  alias: post
+  data: posts
+  size: 1
+  addAllPagesToCollections: true
+eleventyNavigation:
+  key: Blog
+permalink: blog/{{ post.slug.current }}/
+renderData:
+  title: NOCSI Blog — {{ post.title }}
+  description: "{{ post.description }}"
+  mainImage: "{{ post.mainImage | sanityUrlFor(640) }}"
+  socialImage: "{{ post.socialImage | sanityUrlFor }}"
+  socialImageWidth: "{{ post.socialImageWidth }}"
+  socialImageHeight: "{{ post.socialImageHeight }}"
+---
+{% from "macros/typography.njk" import tagline, title %}
+
+<div class="slanted-top max-w-full bg-gray-800">
+  <div
+    class="flex flex-col max-w-screen-sm px-4 md:px-0 mx-auto items-center justify-center"
+  >
+    {{ title(post.title) }}
+    {{ tagline(post.description) }}
+    {% set authors = post.authors %} {% include "blog/authors.njk" %}
+  </div>
+
+  {% if post.mainImage %}
+  <div class="relative overflow-visible max-w-screen-sm px-4 md:px-0 mx-auto">
+    <img
+      alt=""
+      class="float-left mb-4"
+      src="{{ post.mainImage | sanityUrlFor(640) }}"
+    />
+  </div>
+  {% endif %}
+</div>
+
+<div class="max-w-screen-sm prose prose-lg mx-auto my-10 pt-10 px-4 sm:px-0">
+  {{ post.body | safe }}
+</div>
+
+
+<div class="mb-10"></div>
+
+<script>
+  if (document.getElementsByClassName('tweet').length > 0) {
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+
+<script>
+  if (window.twttr !== undefined) {
+    twttr.ready(function (twttr) {
+      Array.from(document.getElementsByClassName('tweet')).forEach((tweet) => {
+        const id = tweet.getAttribute('id')
+        twttr.widgets.createTweet(id, tweet, {
+          conversation: 'none', // or all
+          cards: 'hidden', // or visible
+          linkColor: '#cc0000', // default is blue
+          theme: 'light', // or dark
+        })
+      })
+    })
+  }
+</script>
+
+<script>
+  Array.from(document.getElementsByClassName('instagram')).forEach(
+    async (instagram) => {
+      const url = instagram.getAttribute('data-url')
+      const response = await fetch(
+        `https://api.instagram.com/oembed?url=${url}&maxwidth=480&hidecaption&omitscript`
+      )
+      const { html } = await response.json()
+      // https://stackoverflow.com/a/35385518
+      instagram.innerHTML = html
+      var tag = document.createElement('script')
+      tag.src = '//www.instagram.com/embed.js'
+      tag.setAttribute('async', true)
+      document.getElementsByTagName('head')[0].appendChild(tag)
+    }
+  )
+</script>
+
+
+<script async src="{{ '/prism.js' | url }}"></script>
+<link href="{{ '/prism.css' | url }}" rel="stylesheet"/>

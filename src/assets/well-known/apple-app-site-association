@@ -1,0 +1,22 @@
+{
+  "appLinks": {
+    "apps": [],
+    "details" :
+    {
+      "6H298R6MA7.com.nocsi.kyozo":
+      {
+        "paths":
+        [
+        "/kyozo/*"
+        ]
+      },
+      "6H298R6MA7.com.nocsi.noc":
+      {
+        "paths":
+        [
+        "/noc/*"
+        ]
+      },
+    }
+  }
+}
