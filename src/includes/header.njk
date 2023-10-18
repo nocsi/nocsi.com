@@ -73,7 +73,9 @@
                 !-->
               </div>
             </div>
-            <a href="/services/" class="header_link__desktop text-white {% if page.url == '/services/' %}active border-white{% endif %}">Services</a>
+            {% set isBlogRegExp = r/^\/(blog)\//g %}
+            <a href="/blog/" class="header_link__desktop text-gray-100 ml-8 {% if isBlogRegExp.test(page.url) %}active border-white{% endif %}">Blog</a>
+
             <span class="ml-8 font-medium text-gray-100 border-none pb-1">|</a>
             <div class="inline-flex flex-col" id="products_header_link">
               {% set isCompanyPageRegExp = r/^\/(company)\//g %}
@@ -85,11 +87,13 @@
                   class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
                   >About</a
                 >
+                <!--
                 <a
                   href="/careers/"
                   class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
                   >Careers</a
                 >
+                -->
                 <a
                   href="/contact/"
                   class="mx-8 mb-3 text-gray-300 hover:text-white focus:text-white focus:outline-none focus:shadow-outline-red"
@@ -102,8 +106,6 @@
                 >
               </div>
             </div>
-            {% set isBlogRegExp = r/^\/(blog)\//g %}
-            <a href="/blog/" class="header_link__desktop text-gray-100 ml-8 {% if isBlogRegExp.test(page.url) %}active border-white{% endif %}">Blog</a>
             <div class="inline-flex flex-col" id="products_header_link">
               {% set isResourcesPageRegExp = r/^\/(podcast)\//g %}
               <a href="#" class="ml-8 font-medium text-gray-100 {% if isResourcesPageRegExp.test(page.url) %}active border-b-2 border-white{% endif %}">Resources</a>
@@ -228,13 +230,13 @@
                     </a>
                 </li>
                 <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                <a href="/services/" class="header_link__mobile" role="menuitem">Services</a>
-              </h3>
+                <a href="/blog/" class="header_link__mobile" role="menuitem">Blog</a>
+                </h3>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                <a href="/services/" class="header_link__mobile" role="menuitem">Company</a>
+                <a href="/company/" class="header_link__mobile" role="menuitem">Company</a>
               </h3>
               <ul role="list" class="mt-5 space-y-6">
                 <li class="flow-root">
@@ -247,15 +249,17 @@
               </a>
                 </li>
 
+                <!--
                 <li class="flow-root">
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
-                <!-- Heroicon name: outline/globe-alt -->
-                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-                <span class="ml-4">Careers</span>
-              </a>
-            </li>
+                  <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
+                  <!-- Heroicon name: outline/globe-alt -->
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                  <span class="ml-4">Careers</span>
+                  </a>
+                </li>
+                -->
 
             <li class="flow-root">
               <a href="#" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150">
